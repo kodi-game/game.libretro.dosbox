@@ -2,7 +2,7 @@
 <addon id="game.libretro.dosbox"
 		name="DOS (DOSBox)"
 		version="0.74.0.6"
-		provider-name="Libretro">
+		provider-name="DOSBox Team">
 	<requires>
 		<import addon="game.libretro" version="1.0.0"/>
 	</requires>
