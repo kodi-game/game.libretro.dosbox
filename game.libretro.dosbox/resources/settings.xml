@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="30000">
+	<category label="128">
 		<setting label="30001" type="select" id="dosbox_use_options" values="true|false" default="true"/>
 		<setting label="30002" type="select" id="dosbox_adv_options" values="false|true" default="false"/>
 		<setting label="30003" type="select" id="dosbox_machine_type" values="svga_s3|svga_et3000|svga_et4000|svga_paradise|vesa_nolfb|vesa_oldvbe|hercules|cga|tandy|pcjr|ega|vgaonly" default="svga_s3"/>
