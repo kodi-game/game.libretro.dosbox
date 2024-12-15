@@ -25,10 +25,6 @@ msgctxt "Addon Description"
 msgid "DOSBox emulates an IBM PC compatible computer running MS-DOS.[CR][CR]DOSBox can be configured to run a wide range of DOS games, from CGA/Tandy/PCjr classics up to games from the Quake era."
 msgstr "DOSBox emulerer en IBM PC-kompatibel computer, der kører MS-DOS.[CR][CR]DOSBox kan konfigureres til at køre en bred vifte af DOS-spil, fra CGA/Tandy/PCjr-klassikere op til spil fra Quake-æraen."
 
-msgctxt "#30000"
-msgid "Settings"
-msgstr "Indstillinger"
-
 msgctxt "#30001"
 msgid "Enable core-options"
 msgstr "Aktiver kerne-indstillinger"
@@ -80,3 +76,7 @@ msgstr "Type af Sound Blaster"
 msgctxt "#30013"
 msgid "Enable PC-Speaker"
 msgstr "Aktiver PC-højtaler"
+
+#~ msgctxt "#30000"
+#~ msgid "Settings"
+#~ msgstr "Indstillinger"
