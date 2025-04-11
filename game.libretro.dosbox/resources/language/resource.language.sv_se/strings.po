@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: game.libretro.dosbox\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: 2017-02-04 09:56i\n"
-"PO-Revision-Date: 2025-04-06 19:03+0000\n"
+"PO-Revision-Date: 2025-04-11 09:05+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-game/game-libretro-dosbox/sv_se/>\n"
 "Language: sv_se\n"
@@ -27,55 +27,55 @@ msgstr "DOSBox emulerar en IBM PC-kompatibel dator som kör MS-DOS.[CR][CR]DOSBo
 
 msgctxt "#30001"
 msgid "Enable core-options"
-msgstr ""
+msgstr "Aktivera kärnalternativ"
 
 msgctxt "#30002"
 msgid "Enable advanced core-options"
-msgstr ""
+msgstr "Aktivera avancerade kärnalternativ"
 
 msgctxt "#30003"
 msgid "Emulated machine"
-msgstr ""
+msgstr "Emulerad maskin"
 
 msgctxt "#30004"
 msgid "Scaler"
-msgstr ""
+msgstr "Skalare"
 
 msgctxt "#30005"
 msgid "Gamepad emulated mouse"
-msgstr ""
+msgstr "Gamepad-emulerad mus"
 
 msgctxt "#30006"
 msgid "Gamepad emulated deadzone"
-msgstr ""
+msgstr "Gamepad-emulerad dödzon"
 
 msgctxt "#30007"
 msgid "CPU core"
-msgstr ""
+msgstr "CPU-kärna"
 
 msgctxt "#30008"
 msgid "CPU type"
-msgstr ""
+msgstr "CPU-typ"
 
 msgctxt "#30009"
 msgid "CPU cycle mode"
-msgstr ""
+msgstr "CPU-cykelläge"
 
 msgctxt "#30010"
 msgid "CPU cycle multiplier"
-msgstr ""
+msgstr "CPU-cykelmultiplicerare"
 
 msgctxt "#30011"
 msgid "CPU cycles"
-msgstr ""
+msgstr "CPU-cykler"
 
 msgctxt "#30012"
 msgid "Sound Blaster type"
-msgstr ""
+msgstr "Sound Blaster-typ"
 
 msgctxt "#30013"
 msgid "Enable PC-Speaker"
-msgstr ""
+msgstr "Aktivera PC-högtalare"
 
 #~ msgctxt "#30000"
 #~ msgid "Settings"
