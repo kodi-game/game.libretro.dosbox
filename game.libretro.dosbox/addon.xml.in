@@ -22,6 +22,7 @@
 		<assets>
 			<icon>resources/icon.png</icon>
 		</assets>
+		<summary lang="cs_CZ">DOS (DOSBox)</summary>
 		<summary lang="da_DK">DOS (DOSBox)</summary>
 		<summary lang="en_GB">DOS (DOSBox)</summary>
 		<summary lang="es_ES">DOS (DOSBox)</summary>
@@ -30,6 +31,7 @@
 		<summary lang="ru_RU">DOS (DOSBox)</summary>
 		<summary lang="sv_SE">DOS (DOSBox)</summary>
 		<summary lang="zh_CN">DOS (DOSBox)</summary>
+		<description lang="cs_CZ">DOSBox emuluje počítač kompatibilní s IBM PC se systémem MS-DOS.[CR][CR]DOSBox lze nakonfigurovat pro spouštění široké škály her pro DOS, od klasik pro CGA/Tandy/PCjr až po hry z éry Quake.</description>
 		<description lang="da_DK">DOSBox emulerer en IBM PC-kompatibel computer, der kører MS-DOS.[CR][CR]DOSBox kan konfigureres til at køre en bred vifte af DOS-spil, fra CGA/Tandy/PCjr-klassikere op til spil fra Quake-æraen.</description>
 		<description lang="de_DE">DOSBox emuliert einen IBM-PC-kompatiblen Computer, auf dem MS-DOS ausgeführt wird.[CR][CR]DOSBox kann so konfiguriert werden, dass eine große Auswahl an DOS-Spielen läuft, von CGA/Tandy/PCjr-Klassikern bis hin zu Spielen aus der Ära von Quake.</description>
 		<description lang="en_GB">DOSBox emulates an IBM PC compatible computer running MS-DOS.[CR][CR]DOSBox can be configured to run a wide range of DOS games, from CGA/Tandy/PCjr classics up to games from the Quake era.</description>
