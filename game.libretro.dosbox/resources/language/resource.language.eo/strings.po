@@ -77,6 +77,70 @@ msgctxt "#30013"
 msgid "Enable PC-Speaker"
 msgstr ""
 
+msgctxt "#30014"
+msgid "normal2x"
+msgstr ""
+
+msgctxt "#30015"
+msgid "normal3x"
+msgstr ""
+
+msgctxt "#30016"
+msgid "normal"
+msgstr ""
+
+msgctxt "#30017"
+msgid "simple"
+msgstr ""
+
+msgctxt "#30018"
+msgid "386"
+msgstr ""
+
+msgctxt "#30019"
+msgid "386_slow"
+msgstr ""
+
+msgctxt "#30020"
+msgid "486"
+msgstr ""
+
+msgctxt "#30021"
+msgid "486_slow"
+msgstr ""
+
+msgctxt "#30022"
+msgid "pentium_slow"
+msgstr ""
+
+msgctxt "#30023"
+msgid "386_prefetch"
+msgstr ""
+
+msgctxt "#30024"
+msgid "sb16"
+msgstr ""
+
+msgctxt "#30025"
+msgid "sb1"
+msgstr ""
+
+msgctxt "#30026"
+msgid "sb2"
+msgstr ""
+
+msgctxt "#30027"
+msgid "sbpro1"
+msgstr ""
+
+msgctxt "#30028"
+msgid "sbpro2"
+msgstr ""
+
+msgctxt "#30029"
+msgid "gb"
+msgstr ""
+
 #~ msgctxt "#30000"
 #~ msgid "Settings"
 #~ msgstr "Agordoj"
