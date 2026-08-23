@@ -8,8 +8,8 @@
 					<default>true</default>
 					<constraints>
 						<options>
-							<option>true</option>
-							<option>false</option>
+							<option label="20122">true</option>
+							<option label="20424">false</option>
 						</options>
 					</constraints>
 					<control type="list" format="string" />
@@ -19,8 +19,8 @@
 					<default>false</default>
 					<constraints>
 						<options>
-							<option>false</option>
-							<option>true</option>
+							<option label="20424">false</option>
+							<option label="20122">true</option>
 						</options>
 					</constraints>
 					<control type="list" format="string" />
@@ -51,9 +51,9 @@
 					<default>none</default>
 					<constraints>
 						<options>
-							<option>none</option>
-							<option>normal2x</option>
-							<option>normal3x</option>
+							<option label="231">none</option>
+							<option label="30014">normal2x</option>
+							<option label="30015">normal3x</option>
 						</options>
 					</constraints>
 					<control type="list" format="string" />
@@ -90,9 +90,9 @@
 					<default>auto</default>
 					<constraints>
 						<options>
-							<option>auto</option>
-							<option>normal</option>
-							<option>simple</option>
+							<option label="16316">auto</option>
+							<option label="30016">normal</option>
+							<option label="30017">simple</option>
 						</options>
 					</constraints>
 					<control type="list" format="string" />
@@ -102,13 +102,13 @@
 					<default>auto</default>
 					<constraints>
 						<options>
-							<option>auto</option>
-							<option>386</option>
-							<option>386_slow</option>
-							<option>486</option>
-							<option>486_slow</option>
-							<option>pentium_slow</option>
-							<option>386_prefetch</option>
+							<option label="16316">auto</option>
+							<option label="30018">386</option>
+							<option label="30019">386_slow</option>
+							<option label="30020">486</option>
+							<option label="30021">486_slow</option>
+							<option label="30022">pentium_slow</option>
+							<option label="30023">386_prefetch</option>
 						</options>
 					</constraints>
 					<control type="list" format="string" />
@@ -159,13 +159,13 @@
 					<default>sb16</default>
 					<constraints>
 						<options>
-							<option>sb16</option>
-							<option>sb1</option>
-							<option>sb2</option>
-							<option>sbpro1</option>
-							<option>sbpro2</option>
-							<option>gb</option>
-							<option>none</option>
+							<option label="30024">sb16</option>
+							<option label="30025">sb1</option>
+							<option label="30026">sb2</option>
+							<option label="30027">sbpro1</option>
+							<option label="30028">sbpro2</option>
+							<option label="30029">gb</option>
+							<option label="231">none</option>
 						</options>
 					</constraints>
 					<control type="list" format="string" />
@@ -175,8 +175,8 @@
 					<default>false</default>
 					<constraints>
 						<options>
-							<option>false</option>
-							<option>true</option>
+							<option label="20424">false</option>
+							<option label="20122">true</option>
 						</options>
 					</constraints>
 					<control type="list" format="string" />
