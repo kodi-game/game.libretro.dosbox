@@ -1,1 +1,1 @@
-dosbox https://github.com/libretro/dosbox-libretro/archive/4024bf0048c261db58ef98cb5e16de291c429f4e.tar.gz
+dosbox https://github.com/libretro/dosbox-libretro/archive/988aa330d10b1423873ebfd8dcb6106df2538c44.tar.gz
