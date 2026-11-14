@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.5...4.0)
 project(dosbox)
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
@@ -22,7 +22,7 @@ else()
   endif()
 endif()
 
-set(LIBRETRO_BINARY_DIR .)
+set(LIBRETRO_BINARY_DIR libretro)
 set(LIBRETRO_SONAME dosbox_libretro${CMAKE_SHARED_LIBRARY_SUFFIX})
 set(LIBRETRO_JNISONAME libretro${CMAKE_SHARED_LIBRARY_SUFFIX})
 
@@ -47,23 +47,23 @@ if(CORE_SYSTEM_NAME STREQUAL windows)
   message(STATUS "Using ${MSYSTEM} (from MINGW_MAKE='${MINGW_MAKE}')")
 
   set(BUILD_COMMAND ${MINGW_MAKE}
-                    -C .
+                    -C libretro
                     -f Makefile.libretro
                     ${build_job_count}
                     ${LIBRETRO_DEBUG}
                     GIT_VERSION=
                     MSYSTEM=${MSYSTEM}
                     platform=win
-                    )
+                    BUNDLED_SDL=1)
 elseif(CORE_SYSTEM_NAME STREQUAL linux)
   set(BUILD_COMMAND $(MAKE)
-                    -C .
+                    -C libretro
                     -f Makefile.libretro
                     ${build_job_count}
                     ${LIBRETRO_DEBUG}
                     GIT_VERSION=
                     platform=unix
-                    )
+                    BUNDLED_SDL=1)
 elseif(CORE_SYSTEM_NAME STREQUAL osx)
   set(LIBRETRO_CROSS_COMPILE CROSS_COMPILE=1)
   string(TOLOWER "${CMAKE_HOST_SYSTEM_PROCESSOR}" LIBRETRO_HOST_CPU)
@@ -90,13 +90,14 @@ elseif(CORE_SYSTEM_NAME STREQUAL osx)
     set(ARCH intel)
   endif()
   set(BUILD_COMMAND $(MAKE)
-                    -C .
+                    -C libretro
                     -f Makefile.libretro
                     ${build_job_count}
                     ${LIBRETRO_DEBUG}
                     CC=${CMAKE_C_COMPILER}
                     CXX=${CMAKE_CXX_COMPILER}
                     arch=${ARCH}
+                    ARCH=${CPU}
                     ${LIBRETRO_CROSS_COMPILE}
                     GIT_VERSION=
                     SDKROOT=${CMAKE_OSX_SYSROOT}
@@ -105,7 +106,7 @@ elseif(CORE_SYSTEM_NAME STREQUAL osx)
                     LIBRETRO_APPLE_PLATFORM=${CPU}-apple-macos${CMAKE_OSX_DEPLOYMENT_TARGET}
                     platform=osx
                     ${PLATFORM_CMAKE_OPTIONS}
-                    )
+                    BUNDLED_SDL=1)
 elseif(CORE_SYSTEM_NAME STREQUAL ios OR CORE_SYSTEM_NAME STREQUAL darwin_embedded)
   if(CORE_PLATFORM_NAME STREQUAL ios)
     set(LIBRETRO_SONAME dosbox_libretro_ios${CMAKE_SHARED_LIBRARY_SUFFIX})
@@ -115,23 +116,23 @@ elseif(CORE_SYSTEM_NAME STREQUAL ios OR CORE_SYSTEM_NAME STREQUAL darwin_embedde
       set(PLATFORM ios)
     endif()
     set(BUILD_COMMAND IOSSDK=${CMAKE_OSX_SYSROOT} $(MAKE)
-                                                  -C .
+                                                  -C libretro
                                                   -f Makefile.libretro
                                                   ${build_job_count}
                                                   ${LIBRETRO_DEBUG}
                                                   GIT_VERSION=
                                                   platform=${PLATFORM}
-                                                  )
+                                                  BUNDLED_SDL=1)
   elseif(CORE_PLATFORM_NAME STREQUAL tvos)
     set(LIBRETRO_SONAME dosbox_libretro_tvos${CMAKE_SHARED_LIBRARY_SUFFIX})
     set(BUILD_COMMAND IOSSDK=${CMAKE_OSX_SYSROOT} $(MAKE)
-                                                  -C .
+                                                  -C libretro
                                                   -f Makefile.libretro
                                                   ${build_job_count}
                                                   ${LIBRETRO_DEBUG}
                                                   GIT_VERSION=
                                                   platform=tvos-arm64
-                                                  )
+                                                  BUNDLED_SDL=1)
   endif()
 elseif(CORE_SYSTEM_NAME STREQUAL android)
   if(NOT NDKROOT)
@@ -145,7 +146,7 @@ elseif(CORE_SYSTEM_NAME STREQUAL android)
     message(FATAL_ERROR "${PROJECT_NAME} needs Android ${CPU} build command in CMakeLists.txt!")
   endif()
   set(BUILD_COMMAND GNUMAKE=$(MAKE) ${NDKROOT}/ndk-build
-                                    -C jni
+                                    -C libretro/jni
                                     ${build_job_count}
                                     ${LIBRETRO_DEBUG}
                                     APP_ABI=${PLATFORM}
@@ -154,17 +155,17 @@ elseif(CORE_SYSTEM_NAME STREQUAL android)
                                     NDK_LIBS_OUT=${PROJECT_SOURCE_DIR}/${LIBRETRO_BINARY_DIR}
                                     V=1
                                     V7NEONOPTIMIZATION=1
-                                    
+                                    BUNDLED_SDL=1
                     && cp ${PROJECT_SOURCE_DIR}/${LIBRETRO_BINARY_DIR}/${PLATFORM}/${LIBRETRO_JNISONAME} ${PROJECT_SOURCE_DIR}/${LIBRETRO_BINARY_DIR}/${LIBRETRO_SONAME})
 elseif(CORE_SYSTEM_NAME STREQUAL freebsd)
   set(BUILD_COMMAND $(MAKE)
-                    -C .
+                    -C libretro
                     -f Makefile.libretro
                     ${build_job_count}
                     ${LIBRETRO_DEBUG}
                     GIT_VERSION=
                     platform=unix
-                    )
+                    BUNDLED_SDL=1)
 else()
   message(FATAL_ERROR "${PROJECT_NAME} - Unknown system: ${CORE_SYSTEM_NAME}")
 endif()
