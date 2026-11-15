@@ -25,30 +25,6 @@ msgctxt "Addon Description"
 msgid "DOSBox emulates an IBM PC compatible computer running MS-DOS.[CR][CR]DOSBox can be configured to run a wide range of DOS games, from CGA/Tandy/PCjr classics up to games from the Quake era."
 msgstr "DOSBox эмулирует IBM PC-совместимый компьютер под управлением MS-DOS.[CR][CR]DOSBox можно настроить для запуска широкого спектра DOS-игр: от классики CGA/Tandy/PCjr до игр эпохи Quake."
 
-msgctxt "#30001"
-msgid "Enable core-options"
-msgstr "Включить параметры ядра"
-
-msgctxt "#30002"
-msgid "Enable advanced core-options"
-msgstr "Включить расширенные параметры ядра"
-
-msgctxt "#30003"
-msgid "Emulated machine"
-msgstr "Эмулируемый компьютер"
-
-msgctxt "#30004"
-msgid "Scaler"
-msgstr "Масштабатор"
-
-msgctxt "#30005"
-msgid "Gamepad emulated mouse"
-msgstr "Эмулируемая мышь с геймпада"
-
-msgctxt "#30006"
-msgid "Gamepad emulated deadzone"
-msgstr "Мёртвая зона эмулируемой мыши с геймпада"
-
 msgctxt "#30007"
 msgid "CPU core"
 msgstr "Ядро ЦП"
@@ -56,26 +32,6 @@ msgstr "Ядро ЦП"
 msgctxt "#30008"
 msgid "CPU type"
 msgstr "Тип ЦП"
-
-msgctxt "#30009"
-msgid "CPU cycle mode"
-msgstr "Режим циклов ЦП"
-
-msgctxt "#30010"
-msgid "CPU cycle multiplier"
-msgstr "Множитель циклов ЦП"
-
-msgctxt "#30011"
-msgid "CPU cycles"
-msgstr "Циклы ЦП"
-
-msgctxt "#30012"
-msgid "Sound Blaster type"
-msgstr "Тип Sound Blaster"
-
-msgctxt "#30013"
-msgid "Enable PC-Speaker"
-msgstr "Включить динамик ПК"
 
 msgctxt "#30014"
 msgid "normal2x"
@@ -97,49 +53,93 @@ msgctxt "#30018"
 msgid "386"
 msgstr "386"
 
-msgctxt "#30019"
-msgid "386_slow"
-msgstr "386_slow"
-
 msgctxt "#30020"
 msgid "486"
 msgstr "486"
 
-msgctxt "#30021"
-msgid "486_slow"
-msgstr "486_slow"
+#~ msgctxt "#30001"
+#~ msgid "Enable core-options"
+#~ msgstr "Включить параметры ядра"
 
-msgctxt "#30022"
-msgid "pentium_slow"
-msgstr "pentium_slow"
+#~ msgctxt "#30002"
+#~ msgid "Enable advanced core-options"
+#~ msgstr "Включить расширенные параметры ядра"
 
-msgctxt "#30023"
-msgid "386_prefetch"
-msgstr "386_prefetch"
+#~ msgctxt "#30003"
+#~ msgid "Emulated machine"
+#~ msgstr "Эмулируемый компьютер"
 
-msgctxt "#30024"
-msgid "sb16"
-msgstr "sb16"
+#~ msgctxt "#30004"
+#~ msgid "Scaler"
+#~ msgstr "Масштабатор"
 
-msgctxt "#30025"
-msgid "sb1"
-msgstr "sb1"
+#~ msgctxt "#30005"
+#~ msgid "Gamepad emulated mouse"
+#~ msgstr "Эмулируемая мышь с геймпада"
 
-msgctxt "#30026"
-msgid "sb2"
-msgstr "sb2"
+#~ msgctxt "#30006"
+#~ msgid "Gamepad emulated deadzone"
+#~ msgstr "Мёртвая зона эмулируемой мыши с геймпада"
 
-msgctxt "#30027"
-msgid "sbpro1"
-msgstr "sbpro1"
+#~ msgctxt "#30009"
+#~ msgid "CPU cycle mode"
+#~ msgstr "Режим циклов ЦП"
 
-msgctxt "#30028"
-msgid "sbpro2"
-msgstr "sbpro2"
+#~ msgctxt "#30010"
+#~ msgid "CPU cycle multiplier"
+#~ msgstr "Множитель циклов ЦП"
 
-msgctxt "#30029"
-msgid "gb"
-msgstr "gb"
+#~ msgctxt "#30011"
+#~ msgid "CPU cycles"
+#~ msgstr "Циклы ЦП"
+
+#~ msgctxt "#30012"
+#~ msgid "Sound Blaster type"
+#~ msgstr "Тип Sound Blaster"
+
+#~ msgctxt "#30013"
+#~ msgid "Enable PC-Speaker"
+#~ msgstr "Включить динамик ПК"
+
+#~ msgctxt "#30019"
+#~ msgid "386_slow"
+#~ msgstr "386_slow"
+
+#~ msgctxt "#30021"
+#~ msgid "486_slow"
+#~ msgstr "486_slow"
+
+#~ msgctxt "#30022"
+#~ msgid "pentium_slow"
+#~ msgstr "pentium_slow"
+
+#~ msgctxt "#30023"
+#~ msgid "386_prefetch"
+#~ msgstr "386_prefetch"
+
+#~ msgctxt "#30024"
+#~ msgid "sb16"
+#~ msgstr "sb16"
+
+#~ msgctxt "#30025"
+#~ msgid "sb1"
+#~ msgstr "sb1"
+
+#~ msgctxt "#30026"
+#~ msgid "sb2"
+#~ msgstr "sb2"
+
+#~ msgctxt "#30027"
+#~ msgid "sbpro1"
+#~ msgstr "sbpro1"
+
+#~ msgctxt "#30028"
+#~ msgid "sbpro2"
+#~ msgstr "sbpro2"
+
+#~ msgctxt "#30029"
+#~ msgid "gb"
+#~ msgstr "gb"
 
 #~ msgctxt "#30000"
 #~ msgid "Settings"

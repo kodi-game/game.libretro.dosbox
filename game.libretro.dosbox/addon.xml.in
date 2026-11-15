@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="game.libretro.dosbox"
 		name="DOS (DOSBox)"
-		version="0.74.0.36"
+		version="4494.0.0.36"
 		provider-name="DOSBox Team">
 	<requires>
 		<import addon="game.libretro" version="1.0.0"/>
@@ -9,11 +9,12 @@
 	<extension point="kodi.gameclient"
 			library_@PLATFORM@="@LIBRARY_FILENAME@">
 		<platforms>DOS</platforms>
-		<extensions>exe|com|bat|conf</extensions>
+		<extensions>exe|com|bat|conf|cue|iso|img|zip</extensions>
 		<supports_vfs>false</supports_vfs>
 		<supports_standalone>true</supports_standalone>
-		<supports_disc_control>false</supports_disc_control>
-		<requires_opengl>false</requires_opengl>
+		<supports_disc_control>true</supports_disc_control>
+		<libretro_core>dosbox_libretro</libretro_core>
+		<savestate_features>null</savestate_features>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<license>GPLv2</license>

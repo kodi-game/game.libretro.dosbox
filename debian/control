@@ -4,7 +4,7 @@ Maintainer: wsnipex <wsnipex@a1.net>
 Build-Depends: debhelper (>= 9.0.0),
                cmake,
                kodi-addon-dev,
-               libretro-dosbox (>= 0.74.0) | dosbox (>= 0.74.0)
+               libretro-dosbox (>= 4494.0.0) | dosbox (>= 4494.0.0)
 Standards-Version: 3.9.8
 Section: libs
 

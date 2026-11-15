@@ -25,30 +25,6 @@ msgctxt "Addon Description"
 msgid "DOSBox emulates an IBM PC compatible computer running MS-DOS.[CR][CR]DOSBox can be configured to run a wide range of DOS games, from CGA/Tandy/PCjr classics up to games from the Quake era."
 msgstr "DOSBox emuluje počítač kompatibilní s IBM PC se systémem MS-DOS.[CR][CR]DOSBox lze nakonfigurovat pro spouštění široké škály her pro DOS, od klasik pro CGA/Tandy/PCjr až po hry z éry Quake."
 
-msgctxt "#30001"
-msgid "Enable core-options"
-msgstr "Povolit volby jádra"
-
-msgctxt "#30002"
-msgid "Enable advanced core-options"
-msgstr "Povolit pokročilé volby jádra"
-
-msgctxt "#30003"
-msgid "Emulated machine"
-msgstr "Emulovaný stroj"
-
-msgctxt "#30004"
-msgid "Scaler"
-msgstr "Škálovač"
-
-msgctxt "#30005"
-msgid "Gamepad emulated mouse"
-msgstr "Myš emulovaná gamepadem"
-
-msgctxt "#30006"
-msgid "Gamepad emulated deadzone"
-msgstr "Mrtvá zóna myši emulované gamepadem"
-
 msgctxt "#30007"
 msgid "CPU core"
 msgstr "Jádro CPU"
@@ -56,26 +32,6 @@ msgstr "Jádro CPU"
 msgctxt "#30008"
 msgid "CPU type"
 msgstr "Typ CPU"
-
-msgctxt "#30009"
-msgid "CPU cycle mode"
-msgstr "Režim cyklů CPU"
-
-msgctxt "#30010"
-msgid "CPU cycle multiplier"
-msgstr "Násobitel cyklů CPU"
-
-msgctxt "#30011"
-msgid "CPU cycles"
-msgstr "Cykly CPU"
-
-msgctxt "#30012"
-msgid "Sound Blaster type"
-msgstr "Typ Sound Blasteru"
-
-msgctxt "#30013"
-msgid "Enable PC-Speaker"
-msgstr "Povolit PC speaker"
 
 msgctxt "#30014"
 msgid "normal2x"
@@ -97,46 +53,90 @@ msgctxt "#30018"
 msgid "386"
 msgstr "386"
 
-msgctxt "#30019"
-msgid "386_slow"
-msgstr "386_slow"
-
 msgctxt "#30020"
 msgid "486"
 msgstr "486"
 
-msgctxt "#30021"
-msgid "486_slow"
-msgstr "486_slow"
+#~ msgctxt "#30001"
+#~ msgid "Enable core-options"
+#~ msgstr "Povolit volby jádra"
 
-msgctxt "#30022"
-msgid "pentium_slow"
-msgstr "pentium_slow"
+#~ msgctxt "#30002"
+#~ msgid "Enable advanced core-options"
+#~ msgstr "Povolit pokročilé volby jádra"
 
-msgctxt "#30023"
-msgid "386_prefetch"
-msgstr "386_prefetch"
+#~ msgctxt "#30003"
+#~ msgid "Emulated machine"
+#~ msgstr "Emulovaný stroj"
 
-msgctxt "#30024"
-msgid "sb16"
-msgstr "sb16"
+#~ msgctxt "#30004"
+#~ msgid "Scaler"
+#~ msgstr "Škálovač"
 
-msgctxt "#30025"
-msgid "sb1"
-msgstr "sb1"
+#~ msgctxt "#30005"
+#~ msgid "Gamepad emulated mouse"
+#~ msgstr "Myš emulovaná gamepadem"
 
-msgctxt "#30026"
-msgid "sb2"
-msgstr "sb2"
+#~ msgctxt "#30006"
+#~ msgid "Gamepad emulated deadzone"
+#~ msgstr "Mrtvá zóna myši emulované gamepadem"
 
-msgctxt "#30027"
-msgid "sbpro1"
-msgstr "sbpro1"
+#~ msgctxt "#30009"
+#~ msgid "CPU cycle mode"
+#~ msgstr "Režim cyklů CPU"
 
-msgctxt "#30028"
-msgid "sbpro2"
-msgstr "sbpro2"
+#~ msgctxt "#30010"
+#~ msgid "CPU cycle multiplier"
+#~ msgstr "Násobitel cyklů CPU"
 
-msgctxt "#30029"
-msgid "gb"
-msgstr "gb"
+#~ msgctxt "#30011"
+#~ msgid "CPU cycles"
+#~ msgstr "Cykly CPU"
+
+#~ msgctxt "#30012"
+#~ msgid "Sound Blaster type"
+#~ msgstr "Typ Sound Blasteru"
+
+#~ msgctxt "#30013"
+#~ msgid "Enable PC-Speaker"
+#~ msgstr "Povolit PC speaker"
+
+#~ msgctxt "#30019"
+#~ msgid "386_slow"
+#~ msgstr "386_slow"
+
+#~ msgctxt "#30021"
+#~ msgid "486_slow"
+#~ msgstr "486_slow"
+
+#~ msgctxt "#30022"
+#~ msgid "pentium_slow"
+#~ msgstr "pentium_slow"
+
+#~ msgctxt "#30023"
+#~ msgid "386_prefetch"
+#~ msgstr "386_prefetch"
+
+#~ msgctxt "#30024"
+#~ msgid "sb16"
+#~ msgstr "sb16"
+
+#~ msgctxt "#30025"
+#~ msgid "sb1"
+#~ msgstr "sb1"
+
+#~ msgctxt "#30026"
+#~ msgid "sb2"
+#~ msgstr "sb2"
+
+#~ msgctxt "#30027"
+#~ msgid "sbpro1"
+#~ msgstr "sbpro1"
+
+#~ msgctxt "#30028"
+#~ msgid "sbpro2"
+#~ msgstr "sbpro2"
+
+#~ msgctxt "#30029"
+#~ msgid "gb"
+#~ msgstr "gb"
