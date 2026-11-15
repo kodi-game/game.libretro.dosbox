@@ -1,0 +1,30 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Kel Modderman <kelvmod@gmail.com>
+Date: Sun, 15 Nov 2026 03:30:20 +1000
+Subject: [PATCH] Touch mpg123's autotools files before configuring it
+
+A git checkout leaves them in no particular time order, so make tries
+to regenerate aclocal.m4 with the automake version mpg123 was made
+with. Touch them in order first, as the GitLab CI jobs do.
+---
+ libretro/deps/mpg123.makefile | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/libretro/deps/mpg123.makefile b/libretro/deps/mpg123.makefile
+index 112f0ce..49e2985 100644
+--- a/libretro/deps/mpg123.makefile
++++ b/libretro/deps/mpg123.makefile
+@@ -6,6 +6,10 @@ LIBMPG123 = $(DEPS_BIN_DIR)/lib/pkgconfig/libmpg123.pc
+ 
+ # Always build in release mode since debug mode spams stdout with infinite debug messages.
+ $(LIBMPG123):
++	cd "$(CURDIR)/deps/mpg123" \
++	&& touch aclocal.m4 && sleep 1 \
++	&& find . -name "*.in" -exec touch {} + && sleep 1 \
++	&& touch configure
+ 	mkdir -p $(LIBMPG123_BUILD_DIR)
+ 	cd $(LIBMPG123_BUILD_DIR) \
+ 	&& unset CFLAGS \
+-- 
+2.55.0
+
