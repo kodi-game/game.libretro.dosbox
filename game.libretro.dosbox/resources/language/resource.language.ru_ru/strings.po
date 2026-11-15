@@ -57,6 +57,3798 @@ msgctxt "#30020"
 msgid "486"
 msgstr "486"
 
+msgctxt "#30030"
+msgid "Enable IPX networking"
+msgstr ""
+
+msgctxt "#30031"
+msgid "Enable IPX over UDP tunneling."
+msgstr ""
+
+msgctxt "#30032"
+msgid "true"
+msgstr ""
+
+msgctxt "#30033"
+msgid "false"
+msgstr ""
+
+msgctxt "#30034"
+msgid "Core option behavior"
+msgstr ""
+
+msgctxt "#30035"
+msgid "Options relating to the behavior of the core options themselves."
+msgstr ""
+
+msgctxt "#30036"
+msgid "Core option handling"
+msgstr ""
+
+msgctxt "#30037"
+msgid ""
+"When configuring emulation settings using the loaded .conf file's INI properties or with DOSBox commands (like \"config -set\",) there will be conflicts with the core options. This setting specifies how those conflicts should be handled.\n"
+"\n"
+"Lock changed options: Lock the core option to a single value. No changes will be allowed through the core options UI. The core option becomes purely informational, simply displaying the current value that was set in the .conf file or through DOSBox commands.\n"
+"\n"
+"Disable changed options: Disable and hide the core option. Its current value will not be changed. If the frontend doesn't support option hiding, changing the option will have no effect."
+msgstr ""
+
+msgctxt "#30038"
+msgid "lock changed options"
+msgstr ""
+
+msgctxt "#30039"
+msgid "disable changed options"
+msgstr ""
+
+msgctxt "#30040"
+msgid "Always load DOSBox.conf"
+msgstr ""
+
+msgctxt "#30041"
+msgid ""
+"Always load the DOSBox.conf file if it exists in the libretro saves directory. Normally, this is not done when loading a custom conf file as content. This is the equivalent to using the \"-userconf\" option with stand-alone dosbox.\n"
+"\n"
+"A DOSBox.conf file based on the current dosbox settings can be generated with the \"config -wcd\" command."
+msgstr ""
+
+msgctxt "#30042"
+msgid "Show all options"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Show all options, including those that usually do not require changing."
+msgstr ""
+
+msgctxt "#30044"
+msgid "Show keyboard mapping options"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Timing"
+msgstr ""
+
+msgctxt "#30046"
+msgid "Timing and synchronization."
+msgstr ""
+
+msgctxt "#30047"
+msgid "Frame timing mode"
+msgstr ""
+
+msgctxt "#30048"
+msgid "External mode is the recommended setting. It enables the frontend to drive frame pacing. It has no input lag and allows frontend features like DRC and Frame Delay to work correctly. Internal mode runs out of sync with the frontend. This allows for 60FPS output when running 70FPS games, but input lag and stutter/judder are increased. If you have a high refresh rate display (70Hz or better,) then use external mode. It also works great with VRR (g-sync/freesync.) Internal mode is mostly only useful for 60Hz displays in order to get rid of tearing in 70FPS games."
+msgstr ""
+
+msgctxt "#30049"
+msgid "external"
+msgstr ""
+
+msgctxt "#30050"
+msgid "internal (fixed 60FPS)"
+msgstr ""
+
+msgctxt "#30051"
+msgid "Override emulated video refresh rate"
+msgstr ""
+
+msgctxt "#30052"
+msgid ""
+"Forces the emulated refresh rate to a specific value. This can be useful as a method of slowing down game speed without affecting audio speed. Only works in games that use vsync to limit their speed. Keep in mind that this is a hack and might break some games. Using external timing mode is recommended when enabling this.\n"
+"\n"
+"Example use cases for this option are forcing Turrican 2 to run at 50Hz in order to match the speed of the original Amiga version, or forcing a 70Hz game to run at a slower 60Hz if you don't have a high refresh rate display and you don't mind the slower game speed."
+msgstr ""
+
+msgctxt "#30053"
+msgid "OFF"
+msgstr ""
+
+msgctxt "#30054"
+msgid "50Hz"
+msgstr ""
+
+msgctxt "#30055"
+msgid "51Hz"
+msgstr ""
+
+msgctxt "#30056"
+msgid "52Hz"
+msgstr ""
+
+msgctxt "#30057"
+msgid "53Hz"
+msgstr ""
+
+msgctxt "#30058"
+msgid "54Hz"
+msgstr ""
+
+msgctxt "#30059"
+msgid "55Hz"
+msgstr ""
+
+msgctxt "#30060"
+msgid "56Hz"
+msgstr ""
+
+msgctxt "#30061"
+msgid "57Hz"
+msgstr ""
+
+msgctxt "#30062"
+msgid "58Hz"
+msgstr ""
+
+msgctxt "#30063"
+msgid "59Hz"
+msgstr ""
+
+msgctxt "#30064"
+msgid "60Hz"
+msgstr ""
+
+msgctxt "#30065"
+msgid "61Hz"
+msgstr ""
+
+msgctxt "#30066"
+msgid "62Hz"
+msgstr ""
+
+msgctxt "#30067"
+msgid "63Hz"
+msgstr ""
+
+msgctxt "#30068"
+msgid "64Hz"
+msgstr ""
+
+msgctxt "#30069"
+msgid "65Hz"
+msgstr ""
+
+msgctxt "#30070"
+msgid "66Hz"
+msgstr ""
+
+msgctxt "#30071"
+msgid "67Hz"
+msgstr ""
+
+msgctxt "#30072"
+msgid "68Hz"
+msgstr ""
+
+msgctxt "#30073"
+msgid "69Hz"
+msgstr ""
+
+msgctxt "#30074"
+msgid "70Hz"
+msgstr ""
+
+msgctxt "#30075"
+msgid "Frame duping (minor speedup)"
+msgstr ""
+
+msgctxt "#30076"
+msgid "Can provide a (very) minor performance benefit by instructing the frontend to present the previous frame again without re-uploading it if there is no new frame. Some drivers might not correctly support this however. If you run into issues where you get a black screen that lasts until your next input, you can disable frame duping as a workaround."
+msgstr ""
+
+msgctxt "#30077"
+msgid "Thread synchronization method"
+msgstr ""
+
+msgctxt "#30078"
+msgid "\"Wait\" is the recommended method and should work well on most systems. If for some reason it doesn't and you're seeing stutter, setting this to \"spin\" might help (or it might make it worse.) However, \"spin\" will also result in 100% usage on one of your CPU cores. This is \"idle load\" and doesn't increase CPU temperatures by much, but it will prevent the CPU from clocking down which on laptops will affect battery life. "
+msgstr ""
+
+msgctxt "#30079"
+msgid "wait"
+msgstr ""
+
+msgctxt "#30080"
+msgid "spin"
+msgstr ""
+
+msgctxt "#30081"
+msgid "Storage"
+msgstr ""
+
+msgctxt "#30082"
+msgid "File and disk options."
+msgstr ""
+
+msgctxt "#30083"
+msgid "Mount drive C as"
+msgstr ""
+
+msgctxt "#30084"
+msgid "When directly loading a DOS executable rather than a .conf file, the C drive can be mounted to be either the executable's directory, or its parent directory. For example, when loading DUKE3D.EXE that is located in a directory called DUKE3D, setting this option to \"content\" will result in DOS finding the file in C:\\DUKE3D.EXE. If this option is set to \"parent\", the file will be found in C:\\DUKE3D\\DUKE3D.EXE instead."
+msgstr ""
+
+msgctxt "#30085"
+msgid "content directory"
+msgstr ""
+
+msgctxt "#30086"
+msgid "parent directory of content"
+msgstr ""
+
+msgctxt "#30087"
+msgid "Free space for default-mounted drive C"
+msgstr ""
+
+msgctxt "#30088"
+msgid "This is the \"-freesize\" value to use for drive C when loading a DOS executable instead of a .conf file that contains its own MOUNT command."
+msgstr ""
+
+msgctxt "#30089"
+msgid "256MB"
+msgstr ""
+
+msgctxt "#30090"
+msgid "384MB"
+msgstr ""
+
+msgctxt "#30091"
+msgid "512MB"
+msgstr ""
+
+msgctxt "#30092"
+msgid "768MB"
+msgstr ""
+
+msgctxt "#30093"
+msgid "1GB"
+msgstr ""
+
+msgctxt "#30094"
+msgid "1.25GB"
+msgstr ""
+
+msgctxt "#30095"
+msgid "1.5GB"
+msgstr ""
+
+msgctxt "#30096"
+msgid "1.75GB"
+msgstr ""
+
+msgctxt "#30097"
+msgid "Start menu for ZIP content"
+msgstr ""
+
+msgctxt "#30098"
+msgid "When a ZIP holds several programs, or its programs are on a disk image inside it, show a menu to pick the one to start. Disabled, the core stops at the C:\\> prompt instead. A game that is the only program in the ZIP starts either way."
+msgstr ""
+
+msgctxt "#30099"
+msgid "Enable overlay file system (restart)"
+msgstr ""
+
+msgctxt "#30100"
+msgid "Enable overlay file system to redirect filesystem changes to the save directory. Disable if you have problems starting some games."
+msgstr ""
+
+msgctxt "#30101"
+msgid "Video card"
+msgstr ""
+
+msgctxt "#30102"
+msgid "Configuration of the emulated video card."
+msgstr ""
+
+msgctxt "#30103"
+msgid "Emulated machine (restart)"
+msgstr ""
+
+msgctxt "#30104"
+msgid "The type of video hardware DOSBox will emulate."
+msgstr ""
+
+msgctxt "#30105"
+msgid "Hercules"
+msgstr ""
+
+msgctxt "#30106"
+msgid "CGA"
+msgstr ""
+
+msgctxt "#30107"
+msgid "Tandy"
+msgstr ""
+
+msgctxt "#30108"
+msgid "PCjr"
+msgstr ""
+
+msgctxt "#30109"
+msgid "EGA"
+msgstr ""
+
+msgctxt "#30110"
+msgid "VGA"
+msgstr ""
+
+msgctxt "#30111"
+msgid "SVGA (S3 Trio64)"
+msgstr ""
+
+msgctxt "#30112"
+msgid "SVGA (S3 Trio64 no-line buffer hack)"
+msgstr ""
+
+msgctxt "#30113"
+msgid "SVGA (S3 Trio64 VESA 1.3)"
+msgstr ""
+
+msgctxt "#30114"
+msgid "SVGA (Tseng Labs ET3000)"
+msgstr ""
+
+msgctxt "#30115"
+msgid "SVGA (Tseng Labs ET4000)"
+msgstr ""
+
+msgctxt "#30116"
+msgid "SVGA (Paradise PVGA1A)"
+msgstr ""
+
+msgctxt "#30117"
+msgid "Hercules color mode"
+msgstr ""
+
+msgctxt "#30118"
+msgid "The color scheme for hercules emulation."
+msgstr ""
+
+msgctxt "#30119"
+msgid "black & white"
+msgstr ""
+
+msgctxt "#30120"
+msgid "black & amber"
+msgstr ""
+
+msgctxt "#30121"
+msgid "black & green"
+msgstr ""
+
+msgctxt "#30122"
+msgid "CGA composite mode toggle"
+msgstr ""
+
+msgctxt "#30123"
+msgid "Enable or disable CGA composite mode."
+msgstr ""
+
+msgctxt "#30124"
+msgid "auto"
+msgstr ""
+
+msgctxt "#30125"
+msgid "CGA model"
+msgstr ""
+
+msgctxt "#30126"
+msgid "The type of CGA model in the emulated system."
+msgstr ""
+
+msgctxt "#30127"
+msgid "late"
+msgstr ""
+
+msgctxt "#30128"
+msgid "early"
+msgstr ""
+
+msgctxt "#30129"
+msgid "3dfx Voodoo emulation (restart)"
+msgstr ""
+
+msgctxt "#30130"
+msgid ""
+"This emulates the actual 3dfx hardware. This is not a glide emulator and as a result a glide wrapper is neither needed nor supported.\n"
+"Only slow (VERY slow), software-based emulation is supported at the moment. It is probably not possible to get playable speeds in most games."
+msgstr ""
+
+msgctxt "#30131"
+msgid "software"
+msgstr ""
+
+msgctxt "#30132"
+msgid "none"
+msgstr ""
+
+msgctxt "#30133"
+msgid "Voodoo memory size (restart)"
+msgstr ""
+
+msgctxt "#30134"
+msgid "The amount of memory that the emulated Voodoo card has. 4MB is the standard memory configuration for the original Voodoo. 12MB is a non-standard configuration."
+msgstr ""
+
+msgctxt "#30135"
+msgid "4MB"
+msgstr ""
+
+msgctxt "#30136"
+msgid "12MB"
+msgstr ""
+
+msgctxt "#30137"
+msgid "Specs"
+msgstr ""
+
+msgctxt "#30138"
+msgid "CPU and RAM specifications of the emulated DOS PC."
+msgstr ""
+
+msgctxt "#30139"
+msgid "Memory size (restart)"
+msgstr ""
+
+msgctxt "#30140"
+msgid "The amount of memory that the emulated machine has. This value is best left at its default to avoid problems with some games, though few games might require a higher value."
+msgstr ""
+
+msgctxt "#30141"
+msgid "1MB"
+msgstr ""
+
+msgctxt "#30142"
+msgid "2MB"
+msgstr ""
+
+msgctxt "#30143"
+msgid "3MB"
+msgstr ""
+
+msgctxt "#30144"
+msgid "5MB"
+msgstr ""
+
+msgctxt "#30145"
+msgid "6MB"
+msgstr ""
+
+msgctxt "#30146"
+msgid "7MB"
+msgstr ""
+
+msgctxt "#30147"
+msgid "8MB"
+msgstr ""
+
+msgctxt "#30148"
+msgid "9MB"
+msgstr ""
+
+msgctxt "#30149"
+msgid "10MB"
+msgstr ""
+
+msgctxt "#30150"
+msgid "11MB"
+msgstr ""
+
+msgctxt "#30151"
+msgid "13MB"
+msgstr ""
+
+msgctxt "#30152"
+msgid "14MB"
+msgstr ""
+
+msgctxt "#30153"
+msgid "15MB"
+msgstr ""
+
+msgctxt "#30154"
+msgid "16MB"
+msgstr ""
+
+msgctxt "#30155"
+msgid "17MB"
+msgstr ""
+
+msgctxt "#30156"
+msgid "18MB"
+msgstr ""
+
+msgctxt "#30157"
+msgid "19MB"
+msgstr ""
+
+msgctxt "#30158"
+msgid "20MB"
+msgstr ""
+
+msgctxt "#30159"
+msgid "21MB"
+msgstr ""
+
+msgctxt "#30160"
+msgid "22MB"
+msgstr ""
+
+msgctxt "#30161"
+msgid "23MB"
+msgstr ""
+
+msgctxt "#30162"
+msgid "24MB"
+msgstr ""
+
+msgctxt "#30163"
+msgid "25MB"
+msgstr ""
+
+msgctxt "#30164"
+msgid "26MB"
+msgstr ""
+
+msgctxt "#30165"
+msgid "27MB"
+msgstr ""
+
+msgctxt "#30166"
+msgid "28MB"
+msgstr ""
+
+msgctxt "#30167"
+msgid "29MB"
+msgstr ""
+
+msgctxt "#30168"
+msgid "30MB"
+msgstr ""
+
+msgctxt "#30169"
+msgid "31MB"
+msgstr ""
+
+msgctxt "#30170"
+msgid "32MB"
+msgstr ""
+
+msgctxt "#30171"
+msgid "33MB"
+msgstr ""
+
+msgctxt "#30172"
+msgid "34MB"
+msgstr ""
+
+msgctxt "#30173"
+msgid "35MB"
+msgstr ""
+
+msgctxt "#30174"
+msgid "36MB"
+msgstr ""
+
+msgctxt "#30175"
+msgid "37MB"
+msgstr ""
+
+msgctxt "#30176"
+msgid "38MB"
+msgstr ""
+
+msgctxt "#30177"
+msgid "39MB"
+msgstr ""
+
+msgctxt "#30178"
+msgid "40MB"
+msgstr ""
+
+msgctxt "#30179"
+msgid "41MB"
+msgstr ""
+
+msgctxt "#30180"
+msgid "42MB"
+msgstr ""
+
+msgctxt "#30181"
+msgid "43MB"
+msgstr ""
+
+msgctxt "#30182"
+msgid "44MB"
+msgstr ""
+
+msgctxt "#30183"
+msgid "45MB"
+msgstr ""
+
+msgctxt "#30184"
+msgid "46MB"
+msgstr ""
+
+msgctxt "#30185"
+msgid "47MB"
+msgstr ""
+
+msgctxt "#30186"
+msgid "48MB"
+msgstr ""
+
+msgctxt "#30187"
+msgid "49MB"
+msgstr ""
+
+msgctxt "#30188"
+msgid "50MB"
+msgstr ""
+
+msgctxt "#30189"
+msgid "51MB"
+msgstr ""
+
+msgctxt "#30190"
+msgid "52MB"
+msgstr ""
+
+msgctxt "#30191"
+msgid "53MB"
+msgstr ""
+
+msgctxt "#30192"
+msgid "54MB"
+msgstr ""
+
+msgctxt "#30193"
+msgid "55MB"
+msgstr ""
+
+msgctxt "#30194"
+msgid "56MB"
+msgstr ""
+
+msgctxt "#30195"
+msgid "57MB"
+msgstr ""
+
+msgctxt "#30196"
+msgid "58MB"
+msgstr ""
+
+msgctxt "#30197"
+msgid "59MB"
+msgstr ""
+
+msgctxt "#30198"
+msgid "60MB"
+msgstr ""
+
+msgctxt "#30199"
+msgid "61MB"
+msgstr ""
+
+msgctxt "#30200"
+msgid "62MB"
+msgstr ""
+
+msgctxt "#30201"
+msgid "63MB"
+msgstr ""
+
+msgctxt "#30202"
+msgid "XMS support"
+msgstr ""
+
+msgctxt "#30203"
+msgid "Extended memory (XMS) is usually required by protected mode games."
+msgstr ""
+
+msgctxt "#30204"
+msgid "EMS support"
+msgstr ""
+
+msgctxt "#30205"
+msgid ""
+"Expanded memory (EMS) is needed or recommended by some older games. However, some games will not run at all with it enabled (Ultima 7, for example,) or will run better with it disabled.\n"
+"\n"
+"Mixed mode is the most compatible setting for most games that use EMS memory."
+msgstr ""
+
+msgctxt "#30206"
+msgid "mixed mode"
+msgstr ""
+
+msgctxt "#30207"
+msgid "map EMS to XMS (EMM386)"
+msgstr ""
+
+msgctxt "#30208"
+msgid "emulate physical EMS memory board"
+msgstr ""
+
+msgctxt "#30209"
+msgid "UMB support"
+msgstr ""
+
+msgctxt "#30210"
+msgid "The upper memory block (UMB) is usually not needed by games, but can be used to load TSR programs into it without using any of the 640KB base memory."
+msgstr ""
+
+msgctxt "#30211"
+msgid "CPU core used for emulation. When set to \"auto\", the \"normal\" interpreter core will be used for real mode games, while the faster \"dynamic\" recompiler core will be used for protected mode games. The \"simple\" interpreter core is optimized for old real mode games."
+msgstr ""
+
+msgctxt "#30212"
+msgid "dynamic recompiler (x86-64 optimized)"
+msgstr ""
+
+msgctxt "#30213"
+msgid "Emulated CPU type. \"Auto\" is the fastest choice."
+msgstr ""
+
+msgctxt "#30214"
+msgid "386 (slow)"
+msgstr ""
+
+msgctxt "#30215"
+msgid "386 (prefetch queue emulation)"
+msgstr ""
+
+msgctxt "#30216"
+msgid "486 (slow)"
+msgstr ""
+
+msgctxt "#30217"
+msgid "pentium (slow)"
+msgstr ""
+
+msgctxt "#30218"
+msgid "CPU speed from the game's year"
+msgstr ""
+
+msgctxt "#30219"
+msgid "When the game's year is known - from its name, as in \"Game (1993).zip\", or from the automatic gamepad mapping database - emulate a CPU of that time in real mode (capped at 1996's) and run protected mode games at full speed, as DOSBox Pure does. This takes the place of the cycle options below for such games."
+msgstr ""
+
+msgctxt "#30220"
+msgid "CPU cycles mode"
+msgstr ""
+
+msgctxt "#30221"
+msgid "Method to determine the amount of emulated CPU cycles per millisecond. \"Fixed\" mode emulates the amount of cycles you have set. \"Max\" mode will emulate as many cycles as possible, depending on the limits you have set. You can configure a maximum CPU load percentage as well as a cycle amount as limits. \"Auto\" will emulate the fixed cycle amount set in the \"real mode\" cycles options when running real mode games, while for protected mode games it will switch to \"max\" mode. \"Fixed\" mode in combination with an appropriate cycle amount is the most compatible setting, as \"auto\" and \"max\" have issues on many systems."
+msgstr ""
+
+msgctxt "#30222"
+msgid "fixed"
+msgstr ""
+
+msgctxt "#30223"
+msgid "max"
+msgstr ""
+
+msgctxt "#30224"
+msgid "Real mode coarse CPU cycles multiplier"
+msgstr ""
+
+msgctxt "#30225"
+msgid "Multiplier for coarse CPU cycles tuning when running real mode games in \"auto\" cycles mode."
+msgstr ""
+
+msgctxt "#30226"
+msgid "100"
+msgstr ""
+
+msgctxt "#30227"
+msgid "1000"
+msgstr ""
+
+msgctxt "#30228"
+msgid "10000"
+msgstr ""
+
+msgctxt "#30229"
+msgid "100000"
+msgstr ""
+
+msgctxt "#30230"
+msgid "Real mode coarse CPU cycles value"
+msgstr ""
+
+msgctxt "#30231"
+msgid "Value for coarse CPU cycles tuning when running real mode games in \"auto\" cycles mode."
+msgstr ""
+
+msgctxt "#30232"
+msgid "0"
+msgstr ""
+
+msgctxt "#30233"
+msgid "1"
+msgstr ""
+
+msgctxt "#30234"
+msgid "2"
+msgstr ""
+
+msgctxt "#30235"
+msgid "3"
+msgstr ""
+
+msgctxt "#30236"
+msgid "4"
+msgstr ""
+
+msgctxt "#30237"
+msgid "5"
+msgstr ""
+
+msgctxt "#30238"
+msgid "6"
+msgstr ""
+
+msgctxt "#30239"
+msgid "7"
+msgstr ""
+
+msgctxt "#30240"
+msgid "8"
+msgstr ""
+
+msgctxt "#30241"
+msgid "9"
+msgstr ""
+
+msgctxt "#30242"
+msgid "Real mode fine CPU cycles multiplier"
+msgstr ""
+
+msgctxt "#30243"
+msgid "Multiplier for fine CPU cycles tuning when running real mode games in \"auto\" cycles mode."
+msgstr ""
+
+msgctxt "#30244"
+msgid "10"
+msgstr ""
+
+msgctxt "#30245"
+msgid "Real mode fine CPU cycles value"
+msgstr ""
+
+msgctxt "#30246"
+msgid "Value for fine CPU cycles tuning when running real mode games in \"auto\" cycles mode."
+msgstr ""
+
+msgctxt "#30247"
+msgid "Max CPU cycles limit"
+msgstr ""
+
+msgctxt "#30248"
+msgid "Limit the maximum amount of CPU cycles used when using \"max\" mode."
+msgstr ""
+
+msgctxt "#30249"
+msgid "10%"
+msgstr ""
+
+msgctxt "#30250"
+msgid "20%"
+msgstr ""
+
+msgctxt "#30251"
+msgid "30%"
+msgstr ""
+
+msgctxt "#30252"
+msgid "40%"
+msgstr ""
+
+msgctxt "#30253"
+msgid "50%"
+msgstr ""
+
+msgctxt "#30254"
+msgid "60%"
+msgstr ""
+
+msgctxt "#30255"
+msgid "70%"
+msgstr ""
+
+msgctxt "#30256"
+msgid "80%"
+msgstr ""
+
+msgctxt "#30257"
+msgid "90%"
+msgstr ""
+
+msgctxt "#30258"
+msgid "100%"
+msgstr ""
+
+msgctxt "#30259"
+msgid "105%"
+msgstr ""
+
+msgctxt "#30260"
+msgid "Coarse CPU cycles multiplier"
+msgstr ""
+
+msgctxt "#30261"
+msgid "Multiplier for coarse CPU cycles tuning."
+msgstr ""
+
+msgctxt "#30262"
+msgid "Coarse CPU cycles value"
+msgstr ""
+
+msgctxt "#30263"
+msgid "Value for coarse CPU cycles tuning."
+msgstr ""
+
+msgctxt "#30264"
+msgid "Fine CPU cycles multiplier"
+msgstr ""
+
+msgctxt "#30265"
+msgid "Multiplier for fine CPU cycles tuning."
+msgstr ""
+
+msgctxt "#30266"
+msgid "Fine CPU cycles value"
+msgstr ""
+
+msgctxt "#30267"
+msgid "Value for fine CPU cycles tuning."
+msgstr ""
+
+msgctxt "#30268"
+msgid "Cycle increment for Ctrl-F12"
+msgstr ""
+
+msgctxt "#30269"
+msgid "Values from 100 and up are cycles. Values below 100 are percentages."
+msgstr ""
+
+msgctxt "#30270"
+msgid "1%"
+msgstr ""
+
+msgctxt "#30271"
+msgid "2%"
+msgstr ""
+
+msgctxt "#30272"
+msgid "3%"
+msgstr ""
+
+msgctxt "#30273"
+msgid "4%"
+msgstr ""
+
+msgctxt "#30274"
+msgid "5%"
+msgstr ""
+
+msgctxt "#30275"
+msgid "6%"
+msgstr ""
+
+msgctxt "#30276"
+msgid "7%"
+msgstr ""
+
+msgctxt "#30277"
+msgid "8%"
+msgstr ""
+
+msgctxt "#30278"
+msgid "9%"
+msgstr ""
+
+msgctxt "#30279"
+msgid "15%"
+msgstr ""
+
+msgctxt "#30280"
+msgid "25%"
+msgstr ""
+
+msgctxt "#30281"
+msgid "35%"
+msgstr ""
+
+msgctxt "#30282"
+msgid "45%"
+msgstr ""
+
+msgctxt "#30283"
+msgid "150"
+msgstr ""
+
+msgctxt "#30284"
+msgid "200"
+msgstr ""
+
+msgctxt "#30285"
+msgid "250"
+msgstr ""
+
+msgctxt "#30286"
+msgid "300"
+msgstr ""
+
+msgctxt "#30287"
+msgid "400"
+msgstr ""
+
+msgctxt "#30288"
+msgid "450"
+msgstr ""
+
+msgctxt "#30289"
+msgid "500"
+msgstr ""
+
+msgctxt "#30290"
+msgid "600"
+msgstr ""
+
+msgctxt "#30291"
+msgid "700"
+msgstr ""
+
+msgctxt "#30292"
+msgid "800"
+msgstr ""
+
+msgctxt "#30293"
+msgid "900"
+msgstr ""
+
+msgctxt "#30294"
+msgid "1500"
+msgstr ""
+
+msgctxt "#30295"
+msgid "2000"
+msgstr ""
+
+msgctxt "#30296"
+msgid "2500"
+msgstr ""
+
+msgctxt "#30297"
+msgid "3000"
+msgstr ""
+
+msgctxt "#30298"
+msgid "3500"
+msgstr ""
+
+msgctxt "#30299"
+msgid "4000"
+msgstr ""
+
+msgctxt "#30300"
+msgid "4500"
+msgstr ""
+
+msgctxt "#30301"
+msgid "5000"
+msgstr ""
+
+msgctxt "#30302"
+msgid "6000"
+msgstr ""
+
+msgctxt "#30303"
+msgid "7000"
+msgstr ""
+
+msgctxt "#30304"
+msgid "8000"
+msgstr ""
+
+msgctxt "#30305"
+msgid "9000"
+msgstr ""
+
+msgctxt "#30306"
+msgid "15000"
+msgstr ""
+
+msgctxt "#30307"
+msgid "20000"
+msgstr ""
+
+msgctxt "#30308"
+msgid "25000"
+msgstr ""
+
+msgctxt "#30309"
+msgid "30000"
+msgstr ""
+
+msgctxt "#30310"
+msgid "Cycle decrement for Ctrl-F11"
+msgstr ""
+
+msgctxt "#30311"
+msgid "Scaling"
+msgstr ""
+
+msgctxt "#30312"
+msgid "Image scaling options."
+msgstr ""
+
+msgctxt "#30313"
+msgid "Aspect ratio correction"
+msgstr ""
+
+msgctxt "#30314"
+msgid "When enabled, the aspect ratio will match that of a CRT monitor. This is required for non-square pixel resolutions to look as intended. Disable this if you want unscaled square pixel aspect ratios (at the cost of a squashed or stretched image), or if the result looks clearly wrong (games that use 640x350 for example will look stretched with this enabled.)"
+msgstr ""
+
+msgctxt "#30315"
+msgid "DOSBox scaler"
+msgstr ""
+
+msgctxt "#30316"
+msgid "Built-in, CPU-based DOSBox scalers. These are provided here only as a last resort. You should generally set this to \"none\" and instead use the scaling options and shaders that are provided by your frontend."
+msgstr ""
+
+msgctxt "#30317"
+msgid "advmame2x"
+msgstr ""
+
+msgctxt "#30318"
+msgid "advmame3x"
+msgstr ""
+
+msgctxt "#30319"
+msgid "advinterp2x"
+msgstr ""
+
+msgctxt "#30320"
+msgid "advinterp3x"
+msgstr ""
+
+msgctxt "#30321"
+msgid "hq2x"
+msgstr ""
+
+msgctxt "#30322"
+msgid "hq3x"
+msgstr ""
+
+msgctxt "#30323"
+msgid "2xsai"
+msgstr ""
+
+msgctxt "#30324"
+msgid "super2xsai"
+msgstr ""
+
+msgctxt "#30325"
+msgid "supereagle"
+msgstr ""
+
+msgctxt "#30326"
+msgid "tv2x"
+msgstr ""
+
+msgctxt "#30327"
+msgid "tv3x"
+msgstr ""
+
+msgctxt "#30328"
+msgid "rgb2x"
+msgstr ""
+
+msgctxt "#30329"
+msgid "rgb3x"
+msgstr ""
+
+msgctxt "#30330"
+msgid "scan2x"
+msgstr ""
+
+msgctxt "#30331"
+msgid "scan3x"
+msgstr ""
+
+msgctxt "#30332"
+msgid "Input"
+msgstr ""
+
+msgctxt "#30333"
+msgid "Emulated joystick and mouse."
+msgstr ""
+
+msgctxt "#30334"
+msgid "Automatic gamepad mapping"
+msgstr ""
+
+msgctxt "#30335"
+msgid "For games in the Keyb2Joypad database (from DOSBox Pure), map the first gamepad to the game's keys instead of the emulated joystick. Takes effect when content is loaded."
+msgstr ""
+
+msgctxt "#30336"
+msgid "Force 2-axis/2-button"
+msgstr ""
+
+msgctxt "#30337"
+msgid "Normally, when only one port is assigned a joystick or gamepad, 4 axes and 4 buttons are emulated on that port. Some (usually older) games however do not work correctly without a classic 2-axis/2-button joystick."
+msgstr ""
+
+msgctxt "#30338"
+msgid "Enable joystick timed intervals"
+msgstr ""
+
+msgctxt "#30339"
+msgid "Enable timed intervals for joystick axes. Experiment with this option if your joystick drifts."
+msgstr ""
+
+msgctxt "#30340"
+msgid "Gamepad emulated mouse deadzone"
+msgstr ""
+
+msgctxt "#30341"
+msgid "Deadzone of the gamepad emulated mouse. Experiment with this value if the mouse cursor drifts."
+msgstr ""
+
+msgctxt "#30342"
+msgid "0%"
+msgstr ""
+
+msgctxt "#30343"
+msgid "Horizontal mouse speed"
+msgstr ""
+
+msgctxt "#30344"
+msgid "Experiment with this value if the mouse is too fast when moving left/right."
+msgstr ""
+
+msgctxt "#30345"
+msgid "11"
+msgstr ""
+
+msgctxt "#30346"
+msgid "12"
+msgstr ""
+
+msgctxt "#30347"
+msgid "13"
+msgstr ""
+
+msgctxt "#30348"
+msgid "14"
+msgstr ""
+
+msgctxt "#30349"
+msgid "15"
+msgstr ""
+
+msgctxt "#30350"
+msgid "16"
+msgstr ""
+
+msgctxt "#30351"
+msgid "17"
+msgstr ""
+
+msgctxt "#30352"
+msgid "18"
+msgstr ""
+
+msgctxt "#30353"
+msgid "19"
+msgstr ""
+
+msgctxt "#30354"
+msgid "20"
+msgstr ""
+
+msgctxt "#30355"
+msgid "21"
+msgstr ""
+
+msgctxt "#30356"
+msgid "22"
+msgstr ""
+
+msgctxt "#30357"
+msgid "23"
+msgstr ""
+
+msgctxt "#30358"
+msgid "24"
+msgstr ""
+
+msgctxt "#30359"
+msgid "25"
+msgstr ""
+
+msgctxt "#30360"
+msgid "26"
+msgstr ""
+
+msgctxt "#30361"
+msgid "27"
+msgstr ""
+
+msgctxt "#30362"
+msgid "28"
+msgstr ""
+
+msgctxt "#30363"
+msgid "29"
+msgstr ""
+
+msgctxt "#30364"
+msgid "30"
+msgstr ""
+
+msgctxt "#30365"
+msgid "31"
+msgstr ""
+
+msgctxt "#30366"
+msgid "32"
+msgstr ""
+
+msgctxt "#30367"
+msgid "33"
+msgstr ""
+
+msgctxt "#30368"
+msgid "34"
+msgstr ""
+
+msgctxt "#30369"
+msgid "35"
+msgstr ""
+
+msgctxt "#30370"
+msgid "36"
+msgstr ""
+
+msgctxt "#30371"
+msgid "37"
+msgstr ""
+
+msgctxt "#30372"
+msgid "38"
+msgstr ""
+
+msgctxt "#30373"
+msgid "39"
+msgstr ""
+
+msgctxt "#30374"
+msgid "40"
+msgstr ""
+
+msgctxt "#30375"
+msgid "41"
+msgstr ""
+
+msgctxt "#30376"
+msgid "42"
+msgstr ""
+
+msgctxt "#30377"
+msgid "43"
+msgstr ""
+
+msgctxt "#30378"
+msgid "44"
+msgstr ""
+
+msgctxt "#30379"
+msgid "45"
+msgstr ""
+
+msgctxt "#30380"
+msgid "46"
+msgstr ""
+
+msgctxt "#30381"
+msgid "47"
+msgstr ""
+
+msgctxt "#30382"
+msgid "48"
+msgstr ""
+
+msgctxt "#30383"
+msgid "49"
+msgstr ""
+
+msgctxt "#30384"
+msgid "50"
+msgstr ""
+
+msgctxt "#30385"
+msgid "51"
+msgstr ""
+
+msgctxt "#30386"
+msgid "52"
+msgstr ""
+
+msgctxt "#30387"
+msgid "53"
+msgstr ""
+
+msgctxt "#30388"
+msgid "54"
+msgstr ""
+
+msgctxt "#30389"
+msgid "55"
+msgstr ""
+
+msgctxt "#30390"
+msgid "56"
+msgstr ""
+
+msgctxt "#30391"
+msgid "57"
+msgstr ""
+
+msgctxt "#30392"
+msgid "58"
+msgstr ""
+
+msgctxt "#30393"
+msgid "59"
+msgstr ""
+
+msgctxt "#30394"
+msgid "60"
+msgstr ""
+
+msgctxt "#30395"
+msgid "61"
+msgstr ""
+
+msgctxt "#30396"
+msgid "62"
+msgstr ""
+
+msgctxt "#30397"
+msgid "63"
+msgstr ""
+
+msgctxt "#30398"
+msgid "64"
+msgstr ""
+
+msgctxt "#30399"
+msgid "65"
+msgstr ""
+
+msgctxt "#30400"
+msgid "66"
+msgstr ""
+
+msgctxt "#30401"
+msgid "67"
+msgstr ""
+
+msgctxt "#30402"
+msgid "68"
+msgstr ""
+
+msgctxt "#30403"
+msgid "69"
+msgstr ""
+
+msgctxt "#30404"
+msgid "70"
+msgstr ""
+
+msgctxt "#30405"
+msgid "71"
+msgstr ""
+
+msgctxt "#30406"
+msgid "72"
+msgstr ""
+
+msgctxt "#30407"
+msgid "73"
+msgstr ""
+
+msgctxt "#30408"
+msgid "74"
+msgstr ""
+
+msgctxt "#30409"
+msgid "75"
+msgstr ""
+
+msgctxt "#30410"
+msgid "76"
+msgstr ""
+
+msgctxt "#30411"
+msgid "77"
+msgstr ""
+
+msgctxt "#30412"
+msgid "78"
+msgstr ""
+
+msgctxt "#30413"
+msgid "79"
+msgstr ""
+
+msgctxt "#30414"
+msgid "80"
+msgstr ""
+
+msgctxt "#30415"
+msgid "81"
+msgstr ""
+
+msgctxt "#30416"
+msgid "82"
+msgstr ""
+
+msgctxt "#30417"
+msgid "83"
+msgstr ""
+
+msgctxt "#30418"
+msgid "84"
+msgstr ""
+
+msgctxt "#30419"
+msgid "85"
+msgstr ""
+
+msgctxt "#30420"
+msgid "86"
+msgstr ""
+
+msgctxt "#30421"
+msgid "87"
+msgstr ""
+
+msgctxt "#30422"
+msgid "88"
+msgstr ""
+
+msgctxt "#30423"
+msgid "89"
+msgstr ""
+
+msgctxt "#30424"
+msgid "90"
+msgstr ""
+
+msgctxt "#30425"
+msgid "91"
+msgstr ""
+
+msgctxt "#30426"
+msgid "92"
+msgstr ""
+
+msgctxt "#30427"
+msgid "93"
+msgstr ""
+
+msgctxt "#30428"
+msgid "94"
+msgstr ""
+
+msgctxt "#30429"
+msgid "95"
+msgstr ""
+
+msgctxt "#30430"
+msgid "96"
+msgstr ""
+
+msgctxt "#30431"
+msgid "97"
+msgstr ""
+
+msgctxt "#30432"
+msgid "98"
+msgstr ""
+
+msgctxt "#30433"
+msgid "99"
+msgstr ""
+
+msgctxt "#30434"
+msgid "101"
+msgstr ""
+
+msgctxt "#30435"
+msgid "102"
+msgstr ""
+
+msgctxt "#30436"
+msgid "103"
+msgstr ""
+
+msgctxt "#30437"
+msgid "104"
+msgstr ""
+
+msgctxt "#30438"
+msgid "105"
+msgstr ""
+
+msgctxt "#30439"
+msgid "106"
+msgstr ""
+
+msgctxt "#30440"
+msgid "107"
+msgstr ""
+
+msgctxt "#30441"
+msgid "108"
+msgstr ""
+
+msgctxt "#30442"
+msgid "109"
+msgstr ""
+
+msgctxt "#30443"
+msgid "110"
+msgstr ""
+
+msgctxt "#30444"
+msgid "111"
+msgstr ""
+
+msgctxt "#30445"
+msgid "112"
+msgstr ""
+
+msgctxt "#30446"
+msgid "113"
+msgstr ""
+
+msgctxt "#30447"
+msgid "114"
+msgstr ""
+
+msgctxt "#30448"
+msgid "115"
+msgstr ""
+
+msgctxt "#30449"
+msgid "116"
+msgstr ""
+
+msgctxt "#30450"
+msgid "117"
+msgstr ""
+
+msgctxt "#30451"
+msgid "118"
+msgstr ""
+
+msgctxt "#30452"
+msgid "119"
+msgstr ""
+
+msgctxt "#30453"
+msgid "120"
+msgstr ""
+
+msgctxt "#30454"
+msgid "121"
+msgstr ""
+
+msgctxt "#30455"
+msgid "122"
+msgstr ""
+
+msgctxt "#30456"
+msgid "123"
+msgstr ""
+
+msgctxt "#30457"
+msgid "124"
+msgstr ""
+
+msgctxt "#30458"
+msgid "125"
+msgstr ""
+
+msgctxt "#30459"
+msgid "126"
+msgstr ""
+
+msgctxt "#30460"
+msgid "127"
+msgstr ""
+
+msgctxt "#30461"
+msgid "Vertical mouse speed"
+msgstr ""
+
+msgctxt "#30462"
+msgid "Experiment with this value if the mouse is too fast when moving up/down."
+msgstr ""
+
+msgctxt "#30463"
+msgid "Mouse speed multiplier"
+msgstr ""
+
+msgctxt "#30464"
+msgid "Since the possible mouse speed range is 1 to 127 due to a libretro limitation, this option can be used to increase mouse speed further."
+msgstr ""
+
+msgctxt "#30465"
+msgid "1x"
+msgstr ""
+
+msgctxt "#30466"
+msgid "2x"
+msgstr ""
+
+msgctxt "#30467"
+msgid "3x"
+msgstr ""
+
+msgctxt "#30468"
+msgid "4x"
+msgstr ""
+
+msgctxt "#30469"
+msgid "5x"
+msgstr ""
+
+msgctxt "#30470"
+msgid "Vertical mouse sensitivity correction"
+msgstr ""
+
+msgctxt "#30471"
+msgid "A hack that modifies vertical sensitivity depending on the current video mode. Try enabling this for games that switch between different video modes and result in inconsistent vertical mouse speed."
+msgstr ""
+
+msgctxt "#30472"
+msgid "Clamp minimum mouse speed"
+msgstr ""
+
+msgctxt "#30473"
+msgid "Forces very slow mouse movements to be registered as slightly faster. This can be useful in games that don't register mouse movements that are slower than a certain threshold. Flight of the Amazon Queen is an example of such a game. Do not enable this option in games that don't have this problem. It makes mouse movement worse."
+msgstr ""
+
+msgctxt "#30474"
+msgid "Virtual keyboard"
+msgstr ""
+
+msgctxt "#30475"
+msgid "On-screen virtual keyboard."
+msgstr ""
+
+msgctxt "#30476"
+msgid "Virtual Keyboard Support"
+msgstr ""
+
+msgctxt "#30477"
+msgid "Color theme"
+msgstr ""
+
+msgctxt "#30478"
+msgid "Light (shadow)"
+msgstr ""
+
+msgctxt "#30479"
+msgid "Light (outline)"
+msgstr ""
+
+msgctxt "#30480"
+msgid "Dark (shadow)"
+msgstr ""
+
+msgctxt "#30481"
+msgid "Dark (outline)"
+msgstr ""
+
+msgctxt "#30482"
+msgid "Transparency"
+msgstr ""
+
+msgctxt "#30483"
+msgid "75%"
+msgstr ""
+
+msgctxt "#30484"
+msgid "Gamepad/Joystick 1 keyboard mappings"
+msgstr ""
+
+msgctxt "#30485"
+msgid "It's impossible to map \"Gamepad\" or \"Joystick\" port inputs to keyboard keys using the frontend's UI. You need to use these core options instead."
+msgstr ""
+
+msgctxt "#30486"
+msgid "(J1) D-Pad Up"
+msgstr ""
+
+msgctxt "#30487"
+msgid "---"
+msgstr ""
+
+msgctxt "#30488"
+msgid "A"
+msgstr ""
+
+msgctxt "#30489"
+msgid "B"
+msgstr ""
+
+msgctxt "#30490"
+msgid "C"
+msgstr ""
+
+msgctxt "#30491"
+msgid "D"
+msgstr ""
+
+msgctxt "#30492"
+msgid "E"
+msgstr ""
+
+msgctxt "#30493"
+msgid "F"
+msgstr ""
+
+msgctxt "#30494"
+msgid "G"
+msgstr ""
+
+msgctxt "#30495"
+msgid "H"
+msgstr ""
+
+msgctxt "#30496"
+msgid "I"
+msgstr ""
+
+msgctxt "#30497"
+msgid "J"
+msgstr ""
+
+msgctxt "#30498"
+msgid "K"
+msgstr ""
+
+msgctxt "#30499"
+msgid "L"
+msgstr ""
+
+msgctxt "#30500"
+msgid "M"
+msgstr ""
+
+msgctxt "#30501"
+msgid "N"
+msgstr ""
+
+msgctxt "#30502"
+msgid "O"
+msgstr ""
+
+msgctxt "#30503"
+msgid "P"
+msgstr ""
+
+msgctxt "#30504"
+msgid "Q"
+msgstr ""
+
+msgctxt "#30505"
+msgid "R"
+msgstr ""
+
+msgctxt "#30506"
+msgid "S"
+msgstr ""
+
+msgctxt "#30507"
+msgid "T"
+msgstr ""
+
+msgctxt "#30508"
+msgid "U"
+msgstr ""
+
+msgctxt "#30509"
+msgid "V"
+msgstr ""
+
+msgctxt "#30510"
+msgid "W"
+msgstr ""
+
+msgctxt "#30511"
+msgid "X"
+msgstr ""
+
+msgctxt "#30512"
+msgid "Y"
+msgstr ""
+
+msgctxt "#30513"
+msgid "Z"
+msgstr ""
+
+msgctxt "#30514"
+msgid "F1"
+msgstr ""
+
+msgctxt "#30515"
+msgid "F2"
+msgstr ""
+
+msgctxt "#30516"
+msgid "F3"
+msgstr ""
+
+msgctxt "#30517"
+msgid "F4"
+msgstr ""
+
+msgctxt "#30518"
+msgid "F5"
+msgstr ""
+
+msgctxt "#30519"
+msgid "F6"
+msgstr ""
+
+msgctxt "#30520"
+msgid "F7"
+msgstr ""
+
+msgctxt "#30521"
+msgid "F8"
+msgstr ""
+
+msgctxt "#30522"
+msgid "F9"
+msgstr ""
+
+msgctxt "#30523"
+msgid "F10"
+msgstr ""
+
+msgctxt "#30524"
+msgid "F11"
+msgstr ""
+
+msgctxt "#30525"
+msgid "F12"
+msgstr ""
+
+msgctxt "#30526"
+msgid "Esc"
+msgstr ""
+
+msgctxt "#30527"
+msgid "Tab"
+msgstr ""
+
+msgctxt "#30528"
+msgid "Backspace"
+msgstr ""
+
+msgctxt "#30529"
+msgid "Return/Enter"
+msgstr ""
+
+msgctxt "#30530"
+msgid "Space"
+msgstr ""
+
+msgctxt "#30531"
+msgid "Left Alt"
+msgstr ""
+
+msgctxt "#30532"
+msgid "Right Alt"
+msgstr ""
+
+msgctxt "#30533"
+msgid "Left Ctrl"
+msgstr ""
+
+msgctxt "#30534"
+msgid "Right Ctrl"
+msgstr ""
+
+msgctxt "#30535"
+msgid "Left Shift"
+msgstr ""
+
+msgctxt "#30536"
+msgid "Right Shift"
+msgstr ""
+
+msgctxt "#30537"
+msgid "Caps Lock"
+msgstr ""
+
+msgctxt "#30538"
+msgid "Scroll Lock"
+msgstr ""
+
+msgctxt "#30539"
+msgid "Num Lock"
+msgstr ""
+
+msgctxt "#30540"
+msgid "-"
+msgstr ""
+
+msgctxt "#30541"
+msgid "="
+msgstr ""
+
+msgctxt "#30542"
+msgid "\\"
+msgstr ""
+
+msgctxt "#30543"
+msgid "["
+msgstr ""
+
+msgctxt "#30544"
+msgid "]"
+msgstr ""
+
+msgctxt "#30545"
+msgid ";"
+msgstr ""
+
+msgctxt "#30546"
+msgid "'"
+msgstr ""
+
+msgctxt "#30547"
+msgid "."
+msgstr ""
+
+msgctxt "#30548"
+msgid ","
+msgstr ""
+
+msgctxt "#30549"
+msgid "/"
+msgstr ""
+
+msgctxt "#30550"
+msgid "SysReq/PrintScr"
+msgstr ""
+
+msgctxt "#30551"
+msgid "Pause"
+msgstr ""
+
+msgctxt "#30552"
+msgid "Insert"
+msgstr ""
+
+msgctxt "#30553"
+msgid "Home"
+msgstr ""
+
+msgctxt "#30554"
+msgid "Page Up"
+msgstr ""
+
+msgctxt "#30555"
+msgid "Page Down"
+msgstr ""
+
+msgctxt "#30556"
+msgid "Delete"
+msgstr ""
+
+msgctxt "#30557"
+msgid "End"
+msgstr ""
+
+msgctxt "#30558"
+msgid "Left"
+msgstr ""
+
+msgctxt "#30559"
+msgid "Up"
+msgstr ""
+
+msgctxt "#30560"
+msgid "Down"
+msgstr ""
+
+msgctxt "#30561"
+msgid "Right"
+msgstr ""
+
+msgctxt "#30562"
+msgid "Keypad 1"
+msgstr ""
+
+msgctxt "#30563"
+msgid "Keypad 2"
+msgstr ""
+
+msgctxt "#30564"
+msgid "Keypad 3"
+msgstr ""
+
+msgctxt "#30565"
+msgid "Keypad 4"
+msgstr ""
+
+msgctxt "#30566"
+msgid "Keypad 5"
+msgstr ""
+
+msgctxt "#30567"
+msgid "Keypad 6"
+msgstr ""
+
+msgctxt "#30568"
+msgid "Keypad 7"
+msgstr ""
+
+msgctxt "#30569"
+msgid "Keypad 8"
+msgstr ""
+
+msgctxt "#30570"
+msgid "Keypad 9"
+msgstr ""
+
+msgctxt "#30571"
+msgid "Keypad 0"
+msgstr ""
+
+msgctxt "#30572"
+msgid "Keypad /"
+msgstr ""
+
+msgctxt "#30573"
+msgid "Keypad *"
+msgstr ""
+
+msgctxt "#30574"
+msgid "Keypad -"
+msgstr ""
+
+msgctxt "#30575"
+msgid "Keypad +"
+msgstr ""
+
+msgctxt "#30576"
+msgid "Keypad Enter"
+msgstr ""
+
+msgctxt "#30577"
+msgid "Keypad ."
+msgstr ""
+
+msgctxt "#30578"
+msgid "`"
+msgstr ""
+
+msgctxt "#30579"
+msgid "(J1) D-Pad Down"
+msgstr ""
+
+msgctxt "#30580"
+msgid "(J1) D-Pad Left"
+msgstr ""
+
+msgctxt "#30581"
+msgid "(J1) D-Pad Right"
+msgstr ""
+
+msgctxt "#30582"
+msgid "(J1) B"
+msgstr ""
+
+msgctxt "#30583"
+msgid "(J1) A"
+msgstr ""
+
+msgctxt "#30584"
+msgid "(J1) Y"
+msgstr ""
+
+msgctxt "#30585"
+msgid "(J1) X"
+msgstr ""
+
+msgctxt "#30586"
+msgid "(J1) Select"
+msgstr ""
+
+msgctxt "#30587"
+msgid "(J1) Start"
+msgstr ""
+
+msgctxt "#30588"
+msgid "(J1) Left Bumper"
+msgstr ""
+
+msgctxt "#30589"
+msgid "(J1) Right Bumper"
+msgstr ""
+
+msgctxt "#30590"
+msgid "(J1) Left Trigger"
+msgstr ""
+
+msgctxt "#30591"
+msgid "(J1) Right Trigger"
+msgstr ""
+
+msgctxt "#30592"
+msgid "(J1) Left Thumb"
+msgstr ""
+
+msgctxt "#30593"
+msgid "(J1) Right Thumb"
+msgstr ""
+
+msgctxt "#30594"
+msgid "(J1) Left Analog Up"
+msgstr ""
+
+msgctxt "#30595"
+msgid "(J1) Left Analog Down"
+msgstr ""
+
+msgctxt "#30596"
+msgid "(J1) Left Analog Left"
+msgstr ""
+
+msgctxt "#30597"
+msgid "(J1) Left Analog Right"
+msgstr ""
+
+msgctxt "#30598"
+msgid "(J1) Right Analog Up"
+msgstr ""
+
+msgctxt "#30599"
+msgid "(J1) Right Analog Down"
+msgstr ""
+
+msgctxt "#30600"
+msgid "(J1) Right Analog Left"
+msgstr ""
+
+msgctxt "#30601"
+msgid "(J1) Right Analog Right"
+msgstr ""
+
+msgctxt "#30602"
+msgid "Gamepad/Joystick 2 keyboard mappings"
+msgstr ""
+
+msgctxt "#30603"
+msgid "(J2) D-Pad Up"
+msgstr ""
+
+msgctxt "#30604"
+msgid "(J2) D-Pad Down"
+msgstr ""
+
+msgctxt "#30605"
+msgid "(J2) D-Pad Left"
+msgstr ""
+
+msgctxt "#30606"
+msgid "(J2) D-Pad Right"
+msgstr ""
+
+msgctxt "#30607"
+msgid "(J2) B"
+msgstr ""
+
+msgctxt "#30608"
+msgid "(J2) A"
+msgstr ""
+
+msgctxt "#30609"
+msgid "(J2) Y"
+msgstr ""
+
+msgctxt "#30610"
+msgid "(J2) X"
+msgstr ""
+
+msgctxt "#30611"
+msgid "(J2) Select"
+msgstr ""
+
+msgctxt "#30612"
+msgid "(J2) Start"
+msgstr ""
+
+msgctxt "#30613"
+msgid "(J2) Left Bumper"
+msgstr ""
+
+msgctxt "#30614"
+msgid "(J2) Right Bumper"
+msgstr ""
+
+msgctxt "#30615"
+msgid "(J2) Left Trigger"
+msgstr ""
+
+msgctxt "#30616"
+msgid "(J2) Right Trigger"
+msgstr ""
+
+msgctxt "#30617"
+msgid "(J2) Left Thumb"
+msgstr ""
+
+msgctxt "#30618"
+msgid "(J2) Right Thumb"
+msgstr ""
+
+msgctxt "#30619"
+msgid "(J2) Left Analog Up"
+msgstr ""
+
+msgctxt "#30620"
+msgid "(J2) Left Analog Down"
+msgstr ""
+
+msgctxt "#30621"
+msgid "(J2) Left Analog Left"
+msgstr ""
+
+msgctxt "#30622"
+msgid "(J2) Left Analog Right"
+msgstr ""
+
+msgctxt "#30623"
+msgid "(J2) Right Analog Up"
+msgstr ""
+
+msgctxt "#30624"
+msgid "(J2) Right Analog Down"
+msgstr ""
+
+msgctxt "#30625"
+msgid "(J2) Right Analog Left"
+msgstr ""
+
+msgctxt "#30626"
+msgid "(J2) Right Analog Right"
+msgstr ""
+
+msgctxt "#30627"
+msgid "Sound"
+msgstr ""
+
+msgctxt "#30628"
+msgid "Emulated audio device parameters."
+msgstr ""
+
+msgctxt "#30629"
+msgid "SoundBlaster type"
+msgstr ""
+
+msgctxt "#30630"
+msgid "Type of emulated SoundBlaster card."
+msgstr ""
+
+msgctxt "#30631"
+msgid "SoundBlaster 1.0"
+msgstr ""
+
+msgctxt "#30632"
+msgid "SoundBlaster 2.0"
+msgstr ""
+
+msgctxt "#30633"
+msgid "SoundBlaster Pro"
+msgstr ""
+
+msgctxt "#30634"
+msgid "SoundBlaster Pro 2"
+msgstr ""
+
+msgctxt "#30635"
+msgid "SoundBlaster 16"
+msgstr ""
+
+msgctxt "#30636"
+msgid "GameBlaster"
+msgstr ""
+
+msgctxt "#30637"
+msgid "SoundBlaster Base Address"
+msgstr ""
+
+msgctxt "#30638"
+msgid "The I/O address for the emulated SoundBlaster card."
+msgstr ""
+
+msgctxt "#30639"
+msgid "220"
+msgstr ""
+
+msgctxt "#30640"
+msgid "240"
+msgstr ""
+
+msgctxt "#30641"
+msgid "260"
+msgstr ""
+
+msgctxt "#30642"
+msgid "280"
+msgstr ""
+
+msgctxt "#30643"
+msgid "2a0"
+msgstr ""
+
+msgctxt "#30644"
+msgid "2c0"
+msgstr ""
+
+msgctxt "#30645"
+msgid "2e0"
+msgstr ""
+
+msgctxt "#30646"
+msgid "SoundBlaster IRQ Number"
+msgstr ""
+
+msgctxt "#30647"
+msgid "The IRQ number for the emulated SoundBlaster card."
+msgstr ""
+
+msgctxt "#30648"
+msgid "SoundBlaster DMA Number"
+msgstr ""
+
+msgctxt "#30649"
+msgid "The DMA number for the emulated SoundBlaster card."
+msgstr ""
+
+msgctxt "#30650"
+msgid "SoundBlaster High DMA Number"
+msgstr ""
+
+msgctxt "#30651"
+msgid "The High DMA number for the emulated SoundBlaster card."
+msgstr ""
+
+msgctxt "#30652"
+msgid "SoundBlaster mixer"
+msgstr ""
+
+msgctxt "#30653"
+msgid "This exposes the DOSBox mixer to games as a SoundBlaster mixer. Disable this if you don't want games to be able to override your custom mixer volume levels."
+msgstr ""
+
+msgctxt "#30654"
+msgid "SoundBlaster OPL mode"
+msgstr ""
+
+msgctxt "#30655"
+msgid "The SoundBlaster emulated OPL mode. All modes are Adlib compatible except cms."
+msgstr ""
+
+msgctxt "#30656"
+msgid "auto (select based on the SoundBlaster type)"
+msgstr ""
+
+msgctxt "#30657"
+msgid "CMS (Creative Music System / GameBlaster)"
+msgstr ""
+
+msgctxt "#30658"
+msgid "OPL-2 (AdLib / OPL-2 / Yamaha 3812)"
+msgstr ""
+
+msgctxt "#30659"
+msgid "Dual OPL-2 (used by SoundBlaster Pro 1.0 for stereo sound)"
+msgstr ""
+
+msgctxt "#30660"
+msgid "OPL-3 (AdLib / OPL-3 / Yamaha YMF262)"
+msgstr ""
+
+msgctxt "#30661"
+msgid "OPL-3 Gold (AdLib Gold / OPL-3 / Yamaha YMF262)"
+msgstr ""
+
+msgctxt "#30662"
+msgid "SoundBlaster OPL provider"
+msgstr ""
+
+msgctxt "#30663"
+msgid "\"Nuked OPL3\" is a cycle-accurate OPL3 (YMF262) emulator. It offers the best quality, but is quite demanding on the CPU. \"Compat\" is the next best option. It is less accurate, but also less demanding."
+msgstr ""
+
+msgctxt "#30664"
+msgid "Nuked OPL3"
+msgstr ""
+
+msgctxt "#30665"
+msgid "compat"
+msgstr ""
+
+msgctxt "#30666"
+msgid "mame"
+msgstr ""
+
+msgctxt "#30667"
+msgid "fast"
+msgstr ""
+
+msgctxt "#30668"
+msgid "Gravis Ultrasound support"
+msgstr ""
+
+msgctxt "#30669"
+msgid "Enables Gravis Ultrasound emulation. The ULTRADIR directory is not configurable. It is always set to C:\\ULTRASND."
+msgstr ""
+
+msgctxt "#30670"
+msgid "Ultrasound IO address"
+msgstr ""
+
+msgctxt "#30671"
+msgid "The IO base address for the emulated Gravis Ultrasound card."
+msgstr ""
+
+msgctxt "#30672"
+msgid "Ultrasound IRQ"
+msgstr ""
+
+msgctxt "#30673"
+msgid "The IRQ number for the emulated Gravis Ultrasound card."
+msgstr ""
+
+msgctxt "#30674"
+msgid "Ultrasound DMA"
+msgstr ""
+
+msgctxt "#30675"
+msgid "The DMA channel for the emulated Gravis Ultrasound card."
+msgstr ""
+
+msgctxt "#30676"
+msgid "Enable PC speaker"
+msgstr ""
+
+msgctxt "#30677"
+msgid "Enable PC speaker emulation."
+msgstr ""
+
+msgctxt "#30678"
+msgid "Enable Tandy Sound System"
+msgstr ""
+
+msgctxt "#30679"
+msgid "Enable Tandy Sound System Emulation. Auto only works if machine is set to tandy."
+msgstr ""
+
+msgctxt "#30680"
+msgid "Enable Disney Sound Source"
+msgstr ""
+
+msgctxt "#30681"
+msgid "Enable Disney Sound Source Emulation."
+msgstr ""
+
+msgctxt "#30682"
+msgid "MIDI"
+msgstr ""
+
+msgctxt "#30683"
+msgid "MIDI emulation and output."
+msgstr ""
+
+msgctxt "#30684"
+msgid "MPU-401 type"
+msgstr ""
+
+msgctxt "#30685"
+msgid "Type of MPU-401 MIDI interface to emulate. \"Intelligent\" mode is the best choice."
+msgstr ""
+
+msgctxt "#30686"
+msgid "intelligent"
+msgstr ""
+
+msgctxt "#30687"
+msgid "UART"
+msgstr ""
+
+msgctxt "#30688"
+msgid "MIDI driver"
+msgstr ""
+
+msgctxt "#30689"
+msgid ""
+"The MT-32 emulation driver uses Munt and needs the correct ROMs in the frontend's system directory.\n"
+"The SC-55 driver uses Nuked-SC55 (from DOSBox Pure) and needs the ROMs of a Roland SC-55 family module - ROM1.BIN, ROM2.BIN and the WAVEROM files - in an SC-55 directory in the system directory, or a ZIP of them named SC-55.zip.\n"
+"For BASSMIDI, you need to download the BASS and BASSMIDI libraries for your OS from https://www.un4seen.com and place them in the frontend's system directory.\n"
+"The libretro driver forwards MIDI to the frontend, in which case you need to configure MIDI output there."
+msgstr ""
+
+msgctxt "#30690"
+msgid "ALSA"
+msgstr ""
+
+msgctxt "#30691"
+msgid "BASSMIDI"
+msgstr ""
+
+msgctxt "#30692"
+msgid "FluidSynth"
+msgstr ""
+
+msgctxt "#30693"
+msgid "MT-32 emulator"
+msgstr ""
+
+msgctxt "#30694"
+msgid "Roland SC-55 (Nuked-SC55)"
+msgstr ""
+
+msgctxt "#30695"
+msgid "libretro"
+msgstr ""
+
+msgctxt "#30696"
+msgid "ALSA MIDI port"
+msgstr ""
+
+msgctxt "#30697"
+msgid "ALSA port to send MIDI to."
+msgstr ""
+
+msgctxt "#30698"
+msgid "Autodetect GS port (use GM if GS is not found)"
+msgstr ""
+
+msgctxt "#30699"
+msgid "Autodetect GM port"
+msgstr ""
+
+msgctxt "#30700"
+msgid "Autodetect MT-32 port"
+msgstr ""
+
+msgctxt "#30701"
+msgid "Autodetect XG port"
+msgstr ""
+
+msgctxt "#30702"
+msgid "Autodetect GM2 port"
+msgstr ""
+
+msgctxt "#30703"
+msgid "BASSMIDI soundfont"
+msgstr ""
+
+msgctxt "#30704"
+msgid "Soundfonts are looked for in the \"soundfonts\" directory inside the frontend's system directory. Supported formats are SF2 and SFZ."
+msgstr ""
+
+msgctxt "#30705"
+msgid "(no soundfonts found)"
+msgstr ""
+
+msgctxt "#30706"
+msgid "BASSMIDI soundfont volume"
+msgstr ""
+
+msgctxt "#30707"
+msgid "0.0"
+msgstr ""
+
+msgctxt "#30708"
+msgid "0.1"
+msgstr ""
+
+msgctxt "#30709"
+msgid "0.2"
+msgstr ""
+
+msgctxt "#30710"
+msgid "0.3"
+msgstr ""
+
+msgctxt "#30711"
+msgid "0.4"
+msgstr ""
+
+msgctxt "#30712"
+msgid "0.5"
+msgstr ""
+
+msgctxt "#30713"
+msgid "0.6"
+msgstr ""
+
+msgctxt "#30714"
+msgid "0.7"
+msgstr ""
+
+msgctxt "#30715"
+msgid "0.8"
+msgstr ""
+
+msgctxt "#30716"
+msgid "0.9"
+msgstr ""
+
+msgctxt "#30717"
+msgid "1.0"
+msgstr ""
+
+msgctxt "#30718"
+msgid "1.1"
+msgstr ""
+
+msgctxt "#30719"
+msgid "1.2"
+msgstr ""
+
+msgctxt "#30720"
+msgid "1.3"
+msgstr ""
+
+msgctxt "#30721"
+msgid "1.4"
+msgstr ""
+
+msgctxt "#30722"
+msgid "1.5"
+msgstr ""
+
+msgctxt "#30723"
+msgid "1.6"
+msgstr ""
+
+msgctxt "#30724"
+msgid "1.7"
+msgstr ""
+
+msgctxt "#30725"
+msgid "1.8"
+msgstr ""
+
+msgctxt "#30726"
+msgid "1.9"
+msgstr ""
+
+msgctxt "#30727"
+msgid "2.0"
+msgstr ""
+
+msgctxt "#30728"
+msgid "2.5"
+msgstr ""
+
+msgctxt "#30729"
+msgid "3.0"
+msgstr ""
+
+msgctxt "#30730"
+msgid "3.5"
+msgstr ""
+
+msgctxt "#30731"
+msgid "4.0"
+msgstr ""
+
+msgctxt "#30732"
+msgid "4.5"
+msgstr ""
+
+msgctxt "#30733"
+msgid "5.0"
+msgstr ""
+
+msgctxt "#30734"
+msgid "6.0"
+msgstr ""
+
+msgctxt "#30735"
+msgid "7.0"
+msgstr ""
+
+msgctxt "#30736"
+msgid "8.0"
+msgstr ""
+
+msgctxt "#30737"
+msgid "9.0"
+msgstr ""
+
+msgctxt "#30738"
+msgid "10.0"
+msgstr ""
+
+msgctxt "#30739"
+msgid "BASSMIDI voice count"
+msgstr ""
+
+msgctxt "#30740"
+msgid "Maximum number of samples that can play together. This is not the same thing as the maximum number of notes; multiple samples may be played for a single note. "
+msgstr ""
+
+msgctxt "#30741"
+msgid "140"
+msgstr ""
+
+msgctxt "#30742"
+msgid "160"
+msgstr ""
+
+msgctxt "#30743"
+msgid "180"
+msgstr ""
+
+msgctxt "#30744"
+msgid "350"
+msgstr ""
+
+msgctxt "#30745"
+msgid "FluidSynth soundfont"
+msgstr ""
+
+msgctxt "#30746"
+msgid "Soundfonts are looked for in the \"soundfonts\" directory inside the frontend's system directory. Supported formats are SF2, SF3, DLS and GIG. SF2 and SF3 are the recommended formats."
+msgstr ""
+
+msgctxt "#30747"
+msgid "FluidSynth sample rate"
+msgstr ""
+
+msgctxt "#30748"
+msgid "The sample rate of the audio generated by the synthesizer."
+msgstr ""
+
+msgctxt "#30749"
+msgid "8kHz"
+msgstr ""
+
+msgctxt "#30750"
+msgid "11.025kHz"
+msgstr ""
+
+msgctxt "#30751"
+msgid "16kHz"
+msgstr ""
+
+msgctxt "#30752"
+msgid "22.05kHz"
+msgstr ""
+
+msgctxt "#30753"
+msgid "32kHz"
+msgstr ""
+
+msgctxt "#30754"
+msgid "44.1kHz"
+msgstr ""
+
+msgctxt "#30755"
+msgid "48kHz"
+msgstr ""
+
+msgctxt "#30756"
+msgid "96kHz"
+msgstr ""
+
+msgctxt "#30757"
+msgid "FluidSynth volume gain"
+msgstr ""
+
+msgctxt "#30758"
+msgid "The volume gain is applied to the final output of the synthesizer. Usually this needs to be rather low (0.2-0.5) for most soundfonts to avoid audio clipping and distortion. "
+msgstr ""
+
+msgctxt "#30759"
+msgid "FluidSynth polyphony"
+msgstr ""
+
+msgctxt "#30760"
+msgid "The polyphony defines how many voices can be played in parallel. Higher values are more CPU intensive."
+msgstr ""
+
+msgctxt "#30761"
+msgid "128"
+msgstr ""
+
+msgctxt "#30762"
+msgid "256"
+msgstr ""
+
+msgctxt "#30763"
+msgid "384"
+msgstr ""
+
+msgctxt "#30764"
+msgid "512"
+msgstr ""
+
+msgctxt "#30765"
+msgid "768"
+msgstr ""
+
+msgctxt "#30766"
+msgid "1024"
+msgstr ""
+
+msgctxt "#30767"
+msgid "1536"
+msgstr ""
+
+msgctxt "#30768"
+msgid "2048"
+msgstr ""
+
+msgctxt "#30769"
+msgid "3072"
+msgstr ""
+
+msgctxt "#30770"
+msgid "4096"
+msgstr ""
+
+msgctxt "#30771"
+msgid "FluidSynth CPU cores"
+msgstr ""
+
+msgctxt "#30772"
+msgid "Sets the number of synthesis CPU cores. If set to a value greater than 1, then additional synthesis threads will be created to take advantage of a multi CPU or CPU core system."
+msgstr ""
+
+msgctxt "#30773"
+msgid "FluidSynth enable reverb"
+msgstr ""
+
+msgctxt "#30774"
+msgid "FluidSynth reverb room size"
+msgstr ""
+
+msgctxt "#30775"
+msgid "FluidSynth reverb damping"
+msgstr ""
+
+msgctxt "#30776"
+msgid "FluidSynth reverb width"
+msgstr ""
+
+msgctxt "#30777"
+msgid "12.0"
+msgstr ""
+
+msgctxt "#30778"
+msgid "14.0"
+msgstr ""
+
+msgctxt "#30779"
+msgid "16.0"
+msgstr ""
+
+msgctxt "#30780"
+msgid "18.0"
+msgstr ""
+
+msgctxt "#30781"
+msgid "20.0"
+msgstr ""
+
+msgctxt "#30782"
+msgid "25.0"
+msgstr ""
+
+msgctxt "#30783"
+msgid "30.0"
+msgstr ""
+
+msgctxt "#30784"
+msgid "35.0"
+msgstr ""
+
+msgctxt "#30785"
+msgid "40.0"
+msgstr ""
+
+msgctxt "#30786"
+msgid "45.0"
+msgstr ""
+
+msgctxt "#30787"
+msgid "50.0"
+msgstr ""
+
+msgctxt "#30788"
+msgid "60.0"
+msgstr ""
+
+msgctxt "#30789"
+msgid "70.0"
+msgstr ""
+
+msgctxt "#30790"
+msgid "80.0"
+msgstr ""
+
+msgctxt "#30791"
+msgid "90.0"
+msgstr ""
+
+msgctxt "#30792"
+msgid "100.0"
+msgstr ""
+
+msgctxt "#30793"
+msgid "FluidSynth reverb level"
+msgstr ""
+
+msgctxt "#30794"
+msgid "FluidSynth enable chorus"
+msgstr ""
+
+msgctxt "#30795"
+msgid "FluidSynth chorus voices"
+msgstr ""
+
+msgctxt "#30796"
+msgid "FluidSynth chorus level"
+msgstr ""
+
+msgctxt "#30797"
+msgid "2.2"
+msgstr ""
+
+msgctxt "#30798"
+msgid "2.4"
+msgstr ""
+
+msgctxt "#30799"
+msgid "2.6"
+msgstr ""
+
+msgctxt "#30800"
+msgid "2.8"
+msgstr ""
+
+msgctxt "#30801"
+msgid "5.5"
+msgstr ""
+
+msgctxt "#30802"
+msgid "6.5"
+msgstr ""
+
+msgctxt "#30803"
+msgid "7.5"
+msgstr ""
+
+msgctxt "#30804"
+msgid "8.5"
+msgstr ""
+
+msgctxt "#30805"
+msgid "9.5"
+msgstr ""
+
+msgctxt "#30806"
+msgid "FluidSynth chorus speed"
+msgstr ""
+
+msgctxt "#30807"
+msgid "2.1"
+msgstr ""
+
+msgctxt "#30808"
+msgid "2.3"
+msgstr ""
+
+msgctxt "#30809"
+msgid "2.7"
+msgstr ""
+
+msgctxt "#30810"
+msgid "2.9"
+msgstr ""
+
+msgctxt "#30811"
+msgid "3.1"
+msgstr ""
+
+msgctxt "#30812"
+msgid "3.2"
+msgstr ""
+
+msgctxt "#30813"
+msgid "3.3"
+msgstr ""
+
+msgctxt "#30814"
+msgid "3.4"
+msgstr ""
+
+msgctxt "#30815"
+msgid "3.6"
+msgstr ""
+
+msgctxt "#30816"
+msgid "3.7"
+msgstr ""
+
+msgctxt "#30817"
+msgid "3.8"
+msgstr ""
+
+msgctxt "#30818"
+msgid "3.9"
+msgstr ""
+
+msgctxt "#30819"
+msgid "4.1"
+msgstr ""
+
+msgctxt "#30820"
+msgid "4.2"
+msgstr ""
+
+msgctxt "#30821"
+msgid "4.3"
+msgstr ""
+
+msgctxt "#30822"
+msgid "4.4"
+msgstr ""
+
+msgctxt "#30823"
+msgid "4.6"
+msgstr ""
+
+msgctxt "#30824"
+msgid "4.7"
+msgstr ""
+
+msgctxt "#30825"
+msgid "4.8"
+msgstr ""
+
+msgctxt "#30826"
+msgid "4.9"
+msgstr ""
+
+msgctxt "#30827"
+msgid "FluidSynth chorus depth"
+msgstr ""
+
+msgctxt "#30828"
+msgid "192"
+msgstr ""
+
+msgctxt "#30829"
+msgid "224"
+msgstr ""
+
+msgctxt "#30830"
+msgid "MT-32 hardware type"
+msgstr ""
+
+msgctxt "#30831"
+msgid "Type of MT-32 module to emulate. MT-32 is the older, original model. The CM-32L and LAPC-I are later models that provide some extra instruments not found on the original MT-32. Some games make use of these extra sounds and won't sound correct on the original MT-32."
+msgstr ""
+
+msgctxt "#30832"
+msgid "MT-32"
+msgstr ""
+
+msgctxt "#30833"
+msgid "CM-32L/LAPC-I"
+msgstr ""
+
+msgctxt "#30834"
+msgid "MT-32 reverse stereo channels"
+msgstr ""
+
+msgctxt "#30835"
+msgid "MT-32 threaded emulation"
+msgstr ""
+
+msgctxt "#30836"
+msgid "Run MT-32 emulation in its own thread. Improves performance on multi-core CPUs."
+msgstr ""
+
+msgctxt "#30837"
+msgid "MT-32 threaded chunk size"
+msgstr ""
+
+msgctxt "#30838"
+msgid "Minimum milliseconds of data to render at once. Increasing this value reduces rendering overhead which may improve performance but also increases audio lag."
+msgstr ""
+
+msgctxt "#30839"
+msgid "2ms"
+msgstr ""
+
+msgctxt "#30840"
+msgid "3ms"
+msgstr ""
+
+msgctxt "#30841"
+msgid "4ms"
+msgstr ""
+
+msgctxt "#30842"
+msgid "5ms"
+msgstr ""
+
+msgctxt "#30843"
+msgid "7ms"
+msgstr ""
+
+msgctxt "#30844"
+msgid "10ms"
+msgstr ""
+
+msgctxt "#30845"
+msgid "13ms"
+msgstr ""
+
+msgctxt "#30846"
+msgid "16ms"
+msgstr ""
+
+msgctxt "#30847"
+msgid "20ms"
+msgstr ""
+
+msgctxt "#30848"
+msgid "24ms"
+msgstr ""
+
+msgctxt "#30849"
+msgid "28ms"
+msgstr ""
+
+msgctxt "#30850"
+msgid "32ms"
+msgstr ""
+
+msgctxt "#30851"
+msgid "40ms"
+msgstr ""
+
+msgctxt "#30852"
+msgid "48ms"
+msgstr ""
+
+msgctxt "#30853"
+msgid "56ms"
+msgstr ""
+
+msgctxt "#30854"
+msgid "64ms"
+msgstr ""
+
+msgctxt "#30855"
+msgid "80ms"
+msgstr ""
+
+msgctxt "#30856"
+msgid "96ms"
+msgstr ""
+
+msgctxt "#30857"
+msgid "MT-32 threaded prebuffer size"
+msgstr ""
+
+msgctxt "#30858"
+msgid "How many milliseconds of data to render ahead. Increasing this value may help to avoid underruns but also increases audio lag. Cannot be set less than or equal to the chunk size value."
+msgstr ""
+
+msgctxt "#30859"
+msgid "112ms"
+msgstr ""
+
+msgctxt "#30860"
+msgid "128ms"
+msgstr ""
+
+msgctxt "#30861"
+msgid "144ms"
+msgstr ""
+
+msgctxt "#30862"
+msgid "160ms"
+msgstr ""
+
+msgctxt "#30863"
+msgid "176ms"
+msgstr ""
+
+msgctxt "#30864"
+msgid "192ms"
+msgstr ""
+
+msgctxt "#30865"
+msgid "MT-32 max partials"
+msgstr ""
+
+msgctxt "#30866"
+msgid "The maximum number of partials playing simultaneously. A value of 32 matches real MT-32 hardware. Lowering this value increases performance at the cost of notes getting cut off sooner. Increasing it allows more notes to stay audible compared to real hardware at the cost of performance."
+msgstr ""
+
+msgctxt "#30867"
+msgid "144"
+msgstr ""
+
+msgctxt "#30868"
+msgid "176"
+msgstr ""
+
+msgctxt "#30869"
+msgid "MT-32 DAC input emulation mode"
+msgstr ""
+
+msgctxt "#30870"
+msgid ""
+"High quality: Produces samples at double the volume, without tricks. Higher quality than the real devices.\n"
+"Pure: Produces samples that exactly match the bits output from the emulated LA32. Nicer overdrive characteristics than the DAC hacks (it simply clips samples within range.) Much less likely to overdrive than any other mode. Half the volume of any of the other modes.\n"
+"Gen 1: Re-orders the LA32 output bits as in the early generation MT-32.\n"
+"Gen 2: Re-orders the LA32 output bits as in the later generations MT-32 and CM-32Ls."
+msgstr ""
+
+msgctxt "#30871"
+msgid "high quality"
+msgstr ""
+
+msgctxt "#30872"
+msgid "pure"
+msgstr ""
+
+msgctxt "#30873"
+msgid "gen 1"
+msgstr ""
+
+msgctxt "#30874"
+msgid "gen 2"
+msgstr ""
+
+msgctxt "#30875"
+msgid "MT-32 analog output emulation mode"
+msgstr ""
+
+msgctxt "#30876"
+msgid ""
+"Digital: Only digital path is emulated. The output samples correspond to the digital output signal appeared at the DAC entrance. Fastest mode.\n"
+"Coarse: Coarse emulation of LPF circuit. High frequencies are boosted, sample rate remains unchanged. A bit better sounding but also a bit slower.\n"
+"Accurate: Finer emulation of LPF circuit. Output signal is upsampled to 48 kHz to allow emulation of audible mirror spectra above 16 kHz, which is passed through the LPF circuit without significant attenuation. Sounding is closer to the analog output from real hardware but also slower than \"digital\" and \"coarse\".\n"
+"Oversampled: Same as \"accurate\" but the output signal is 2x oversampled, i.e. the output sample rate is 96 kHz. Even slower than all the other modes but better retains highest frequencies while further resampled in DOSBox mixer."
+msgstr ""
+
+msgctxt "#30877"
+msgid "digital"
+msgstr ""
+
+msgctxt "#30878"
+msgid "coarse"
+msgstr ""
+
+msgctxt "#30879"
+msgid "accurate"
+msgstr ""
+
+msgctxt "#30880"
+msgid "oversampled"
+msgstr ""
+
+msgctxt "#30881"
+msgid "MT-32 reverb mode"
+msgstr ""
+
+msgctxt "#30882"
+msgid "Reverb emulation mode. \"Auto\" will automatically adjust reverb parameters to match the loaded control ROM version."
+msgstr ""
+
+msgctxt "#30883"
+msgid "room"
+msgstr ""
+
+msgctxt "#30884"
+msgid "hall"
+msgstr ""
+
+msgctxt "#30885"
+msgid "plate"
+msgstr ""
+
+msgctxt "#30886"
+msgid "tap delay"
+msgstr ""
+
+msgctxt "#30887"
+msgid "MT-32 reverb decay time"
+msgstr ""
+
+msgctxt "#30888"
+msgid "MT-32 reverb level"
+msgstr ""
+
+msgctxt "#30889"
+msgid "MT-32 sample rate"
+msgstr ""
+
+msgctxt "#30890"
+msgid "49.716kHz"
+msgstr ""
+
+msgctxt "#30891"
+msgid "MT-32 resampling quality"
+msgstr ""
+
+msgctxt "#30892"
+msgid "fastest"
+msgstr ""
+
+msgctxt "#30893"
+msgid "good"
+msgstr ""
+
+msgctxt "#30894"
+msgid "best"
+msgstr ""
+
+msgctxt "#30895"
+msgid "MT-32 nice amp ramp"
+msgstr ""
+
+msgctxt "#30896"
+msgid "Improves amplitude ramp for sustaining instruments. Quick changes of volume or expression on a MIDI channel may result in amp jumps on real hardware. Enabling this option prevents this from happening. Disabling this options preserves emulation accuracy."
+msgstr ""
+
+msgctxt "#30897"
+msgid "Pinhack"
+msgstr ""
+
+msgctxt "#30898"
+msgid "Pinhack configuration options. Pinhack is a no-scroll hack for some pinball games."
+msgstr ""
+
+msgctxt "#30899"
+msgid "A hack that allows some pinball games to display the whole table without scrolling. Do not enable this unless you're playing a game that works with it. It will cause severe issues with other games. See https://github.com/DeXteRrBDN/dosbox-pinhack for more information."
+msgstr ""
+
+msgctxt "#30900"
+msgid "on"
+msgstr ""
+
+msgctxt "#30901"
+msgid "off"
+msgstr ""
+
+msgctxt "#30902"
+msgid "Initial mode"
+msgstr ""
+
+msgctxt "#30903"
+msgid "Whether or not to start with pinhack toggled on or off. It can be toggled on and off at any point with the Insert key."
+msgstr ""
+
+msgctxt "#30904"
+msgid "activated"
+msgstr ""
+
+msgctxt "#30905"
+msgid "deactivated"
+msgstr ""
+
+msgctxt "#30906"
+msgid "Horizontal trigger range"
+msgstr ""
+
+msgctxt "#30907"
+msgid "The horizontal resolution range the pinball hack should trigger at. Usually not needed."
+msgstr ""
+
+msgctxt "#30908"
+msgid "disabled"
+msgstr ""
+
+msgctxt "#30909"
+msgid "300-310"
+msgstr ""
+
+msgctxt "#30910"
+msgid "311-320"
+msgstr ""
+
+msgctxt "#30911"
+msgid "321-330"
+msgstr ""
+
+msgctxt "#30912"
+msgid "331-340"
+msgstr ""
+
+msgctxt "#30913"
+msgid "341-350"
+msgstr ""
+
+msgctxt "#30914"
+msgid "351-360"
+msgstr ""
+
+msgctxt "#30915"
+msgid "361-370"
+msgstr ""
+
+msgctxt "#30916"
+msgid "371-380"
+msgstr ""
+
+msgctxt "#30917"
+msgid "381-390"
+msgstr ""
+
+msgctxt "#30918"
+msgid "391-400"
+msgstr ""
+
+msgctxt "#30919"
+msgid "401-410"
+msgstr ""
+
+msgctxt "#30920"
+msgid "411-420"
+msgstr ""
+
+msgctxt "#30921"
+msgid "421-430"
+msgstr ""
+
+msgctxt "#30922"
+msgid "431-440"
+msgstr ""
+
+msgctxt "#30923"
+msgid "441-450"
+msgstr ""
+
+msgctxt "#30924"
+msgid "451-460"
+msgstr ""
+
+msgctxt "#30925"
+msgid "461-470"
+msgstr ""
+
+msgctxt "#30926"
+msgid "471-480"
+msgstr ""
+
+msgctxt "#30927"
+msgid "481-490"
+msgstr ""
+
+msgctxt "#30928"
+msgid "491-500"
+msgstr ""
+
+msgctxt "#30929"
+msgid "501-510"
+msgstr ""
+
+msgctxt "#30930"
+msgid "511-520"
+msgstr ""
+
+msgctxt "#30931"
+msgid "521-530"
+msgstr ""
+
+msgctxt "#30932"
+msgid "531-540"
+msgstr ""
+
+msgctxt "#30933"
+msgid "541-550"
+msgstr ""
+
+msgctxt "#30934"
+msgid "551-560"
+msgstr ""
+
+msgctxt "#30935"
+msgid "561-570"
+msgstr ""
+
+msgctxt "#30936"
+msgid "571-580"
+msgstr ""
+
+msgctxt "#30937"
+msgid "581-590"
+msgstr ""
+
+msgctxt "#30938"
+msgid "591-600"
+msgstr ""
+
+msgctxt "#30939"
+msgid "601-610"
+msgstr ""
+
+msgctxt "#30940"
+msgid "611-620"
+msgstr ""
+
+msgctxt "#30941"
+msgid "621-630"
+msgstr ""
+
+msgctxt "#30942"
+msgid "631-640"
+msgstr ""
+
+msgctxt "#30943"
+msgid "Vertical trigger range"
+msgstr ""
+
+msgctxt "#30944"
+msgid "The vertical resolution range the pinball hack should trigger at."
+msgstr ""
+
+msgctxt "#30945"
+msgid "200-210"
+msgstr ""
+
+msgctxt "#30946"
+msgid "211-220"
+msgstr ""
+
+msgctxt "#30947"
+msgid "221-230"
+msgstr ""
+
+msgctxt "#30948"
+msgid "231-240"
+msgstr ""
+
+msgctxt "#30949"
+msgid "241-250"
+msgstr ""
+
+msgctxt "#30950"
+msgid "251-260"
+msgstr ""
+
+msgctxt "#30951"
+msgid "261-270"
+msgstr ""
+
+msgctxt "#30952"
+msgid "271-280"
+msgstr ""
+
+msgctxt "#30953"
+msgid "281-290"
+msgstr ""
+
+msgctxt "#30954"
+msgid "291-300"
+msgstr ""
+
+msgctxt "#30955"
+msgid "301-310"
+msgstr ""
+
+msgctxt "#30956"
+msgid "Coarse expand height"
+msgstr ""
+
+msgctxt "#30957"
+msgid "The coarse vertical resolution to expand the game to. You need the correct value for each individual game."
+msgstr ""
+
+msgctxt "#30958"
+msgid "Fine expand height"
+msgstr ""
+
+msgctxt "#30959"
+msgid "Combine this with the coarse expand height to get a final value. For example setting coarse to 600 and fine to 9 will result in an expand height of 609 (Pinball Fantasies)."
+msgstr ""
+
+msgctxt "#30960"
+msgid "Logging"
+msgstr ""
+
+msgctxt "#30961"
+msgid "Event logging."
+msgstr ""
+
+msgctxt "#30962"
+msgid "Output method"
+msgstr ""
+
+msgctxt "#30963"
+msgid "Where to send log output. \"Frontend\" will send it to the frontend, while \"stdout/stderr\" will print it to standard output or standard error (warnings and errors go to stderr, debug and informational messages to stdout.)"
+msgstr ""
+
+msgctxt "#30964"
+msgid "frontend"
+msgstr ""
+
+msgctxt "#30965"
+msgid "stdout/stderr"
+msgstr ""
+
+msgctxt "#30966"
+msgid "Verbosity level"
+msgstr ""
+
+msgctxt "#30967"
+msgid "debug"
+msgstr ""
+
+msgctxt "#30968"
+msgid "info"
+msgstr ""
+
+msgctxt "#30969"
+msgid "warnings"
+msgstr ""
+
+msgctxt "#30970"
+msgid "errors"
+msgstr ""
+
 #~ msgctxt "#30001"
 #~ msgid "Enable core-options"
 #~ msgstr "Включить параметры ядра"
